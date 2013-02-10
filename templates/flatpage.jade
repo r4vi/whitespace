@@ -1,0 +1,10 @@
+extends base
+
+block append css
+    link(rel='stylesheet', href='/static/github-pygments.css')
+
+block content
+    article
+        header
+            h1= page.title
+        =page.html|safe
