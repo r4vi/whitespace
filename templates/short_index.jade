@@ -1,0 +1,9 @@
+extends base
+
+block content
+  ul
+    each short in shorts
+      li.index
+        a(href='/' + short.path)=short.title
+        time.pubdate(datetime=short.meta.date)=short.meta.date
+

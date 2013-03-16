@@ -2,6 +2,7 @@
 
 # Set this to the root of your project when deployed:
 require "susy"
+require "sassy-buttons"
 http_path = "/"
 css_dir = "stylesheets"
 sass_dir = "sass"

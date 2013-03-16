@@ -1,22 +1,55 @@
 !!! 5
-html(lang="en")
+//if lt IE 7
+  html.no-js.ie6.oldie(lang='en')
+//if IE 7
+  html.no-js.ie7.oldie(lang='en')
+//if IE 8
+  html.no-js.ie8.oldie(lang='en')
+//[if gt IE 8]><!
+html.no-js(lang='en')
+  //<![end if]
   head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    meta(name="viewport", content='width=device-width, initial-scale=1')
+
     block css
       link(href="/static/stylesheets/screen.css", media="screen, projection", rel="stylesheet", type="text/css")
-        link(href="/static/stylesheets/print.css", media="print", rel="stylesheet", type="text/css")
-          //if IE
-            link(href="/static/stylesheets/ie.css", media="screen, projection", rel="stylesheet", type="text/css")
-        title My Site - #{title or page.title}
-    body
+      link(href="/static/stylesheets/print.css", media="print", rel="stylesheet", type="text/css")
+      //if IE
+        link(href="/static/stylesheets/ie.css", media="screen, projection", rel="stylesheet", type="text/css")
+      block title
+        title #{title} → pckl.me
+        meta(property="og:title", content=title)
+      block opengraph
+        meta(property="og:site_name", content=config.SITE_NAME)
+      block headscripts
+        //if lt IE9
+          script(src="http://html5shiv.googlecode.com/svn/trunk/html5.js")
+
+
+  body
+    block main
+      #main
         block header
           header
-              a(href="http://pckl.me/") Ravi Kotecha
-              block nav
-                nav
-                  a home
-            block content
-            block footer
-              footer
-                p &copy; Ravi Kotecha 2013
-            block scripts
-
+            block nav
+              a(href="/") Ravi Kotecha
+              nav
+                a(href='/short/') shorts
+                =" //"
+                a(href='/post/') posts
+                =" //"
+                a(href='/photo/') photos
+                =" //"
+                a(href='/contact') contact
+        hr
+        block content
+        hr
+        footer
+          block footer
+            .lime
+    block scripts
+      - assets 'common_js'
+        script(src='{{ ASSET_URL }}')
+      - endassets

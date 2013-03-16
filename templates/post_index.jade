@@ -1,0 +1,9 @@
+extends base
+
+block content
+  ul
+    each post in posts
+      li.index
+        a(href='/' + post.path)=post.title
+        time.pubdate(datetime=post.meta.date)=post.meta.date
+

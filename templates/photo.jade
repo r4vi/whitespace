@@ -1,0 +1,36 @@
+extends flatpage
+
+block append scripts
+  - assets 'photo_js'
+    script
+      Modernizr.load({
+        load: '{{ ASSET_URL }}',
+        complete: function(){
+          __pckl.Photo.init();
+        }
+      })
+  - endassets
+
+block main
+  article.photo
+    img(
+    data-square-src=sizes['Square'].source
+    data-large-square-src=sizes['Large Square'].source
+    data-thumbnail-src=sizes['Thumbnail'].source
+    data-small-src=sizes['Small'].source
+    data-small320-src=sizes['Small 320'].source
+    data-medium-src=sizes['Medium'].source
+    data-medium640-src=sizes['Medium 640'].source
+    data-medium800-src=sizes['Medium 800'].source
+    data-large-src=sizes['Large'].source
+    data-large1600-src=sizes['Large 1600'].source
+    data-large2048-src=sizes['Large 2048'].source
+    data-original-src=sizes['Original'].source
+    )
+
+block header
+  // clear header and footer
+
+block footer
+  // for debug
+    ='photo template used'

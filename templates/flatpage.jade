@@ -1,10 +1,12 @@
 extends base
 
 block append css
-    link(rel='stylesheet', href='/static/github-pygments.css')
+  link(rel='stylesheet', href='/static/github-pygments.css')
 
 block content
-    article
-        header
-            h1= page.title
-        =page.html|safe
+  article
+    header
+      - if page.meta.date
+        time.pubdate(datetime=page.meta.date)='published ' + page.meta.date
+      h1(class='title')= page.title
+    =page.html|safe

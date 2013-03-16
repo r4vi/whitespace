@@ -1,0 +1,11 @@
+*.swp
+*.pyc
+*venv
+venv
+build
+settings.pystatic/.webassets-cache/
+static/.sass-cache/
+.idea/
+.iml
+*.iml
+static/.webassets-cache/*

@@ -1,0 +1,30 @@
+extends base
+
+block content
+  .intro
+    .avatar
+      img(src='/static/images/avatar.jpg')
+    h1.title
+      ='Full Stack Software Developer'
+    :markdown
+      Hacker [@pitchup](http://www.pitchup.com), tried & failed [@tripmedi](http://tripmedi.com/),
+      ycombinator reject, producer [@thestartupbus](http://www.startupbus.com),
+      occasional writer of stories and taker of photos.
+  hr
+  h2='Milestones'
+  .milestones
+    each milestone in milestones
+      .milestone
+        h3
+          =milestone.meta.title
+          - if milestone.meta.link
+            &nbsp;
+            a(href=milestone.meta.link, target='_blank')
+              span.icon-external-link
+        .subtitle
+          - if milestone.meta.subtitle
+            =milestone.meta.subtitle
+            br
+          span.icon-calendar
+          time.pubdate(datetime=milestone.meta.date)=milestone.meta.date.strftime('%B %Y')
+        =milestone.html|safe
