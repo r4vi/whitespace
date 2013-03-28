@@ -9,3 +9,4 @@ static/.sass-cache/
 .iml
 *.iml
 static/.webassets-cache/*
+settings.py
