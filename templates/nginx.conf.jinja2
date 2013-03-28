@@ -1,0 +1,14 @@
+server {
+        listen          80;
+        server_name     {{ domain }};
+        root            {{ root }};
+
+        access_log      {{ root }}log/access.log;
+        error_log       {{ root }}log/error.log;
+
+        location / {
+            root {{ root }}public/;
+            index index.html;
+        }
+
+}

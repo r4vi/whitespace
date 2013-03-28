@@ -1,9 +1,12 @@
 extends base
 
 block content
+  h1.title=title
   ul
     each photo in photos
       li.index
         a(href='/' + photo.path)=photo.title
-        time.pubdate(datetime=photo.meta.date)=photo.meta.date
+        time.pubdate(datetime=photo.meta.date)
+          span.icon-calendar
+          =photo.meta.date.strftime('%d %B %Y')
 

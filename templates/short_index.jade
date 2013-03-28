@@ -1,9 +1,13 @@
 extends base
 
 block content
+  h1.title=title
   ul
     each short in shorts
       li.index
         a(href='/' + short.path)=short.title
-        time.pubdate(datetime=short.meta.date)=short.meta.date
+        - if short.meta.date
+          time.pubdate(datetime=short.meta.date)
+            span.icon-calendar
+            =short.meta.date.strftime('%d %B %Y')
 

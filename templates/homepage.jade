@@ -6,25 +6,35 @@ block content
       img(src='/static/images/avatar.jpg')
     h1.title
       ='Full Stack Software Developer'
-    :markdown
-      Hacker [@pitchup](http://www.pitchup.com), tried & failed [@tripmedi](http://tripmedi.com/),
-      ycombinator reject, producer [@thestartupbus](http://www.startupbus.com),
-      occasional writer of stories and taker of photos.
+    .bio
+      :markdown
+        Hacker [@pitchup](http://www.pitchup.com),
+        occasional writer of stories and taker of pictures.
   hr
   h2='Milestones'
   .milestones
     each milestone in milestones
       .milestone
-        h3
+        - if milestone.meta.link
+          a(href=milestone.meta.link, target='_blank')
+            h3
+              =milestone.meta.title
+              - if milestone.meta.link
+                span.icon-external-link.pull-right
+        - else
+          h3
           =milestone.meta.title
-          - if milestone.meta.link
-            &nbsp;
-            a(href=milestone.meta.link, target='_blank')
-              span.icon-external-link
         .subtitle
           - if milestone.meta.subtitle
+            span.icon-hand-right=' '
             =milestone.meta.subtitle
-            br
+          &nbsp;
           span.icon-calendar
           time.pubdate(datetime=milestone.meta.date)=milestone.meta.date.strftime('%B %Y')
-        =milestone.html|safe
+        .wrap
+          - if milestone.meta.thumbnail
+            img(src=milestone.meta.thumbnail)
+          .markdown
+            =milestone.html|safe
+        - if milestone.meta.status
+          p.status='Status: ' + milestone.meta.status

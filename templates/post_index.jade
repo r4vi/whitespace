@@ -1,9 +1,15 @@
 extends base
 
 block content
+  h1.title=title
   ul
-    each post in posts
-      li.index
-        a(href='/' + post.path)=post.title
-        time.pubdate(datetime=post.meta.date)=post.meta.date
-
+    - if posts
+      each post in posts
+        li.index
+          a(href='/' + post.path)=post.title
+          - if post.meta.date
+            time.pubdate(datetime=post.meta.date)
+              span.icon-calendar
+              =post.meta.date.strftime('%B %Y')
+    - else
+      ='nothing to see here'

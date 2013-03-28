@@ -17,6 +17,7 @@ block main
     data-square-src=sizes['Square'].source
     data-large-square-src=sizes['Large Square'].source
     data-thumbnail-src=sizes['Thumbnail'].source
+    src=sizes['Small'].source
     data-small-src=sizes['Small'].source
     data-small320-src=sizes['Small 320'].source
     data-medium-src=sizes['Medium'].source
@@ -27,6 +28,12 @@ block main
     data-large2048-src=sizes['Large 2048'].source
     data-original-src=sizes['Original'].source
     )
+    - if bgcolor
+      style(type='text/css')
+        html {
+          background-color: {{ bgcolor }};
+          background-image: none;
+        }
 
 block header
   // clear header and footer

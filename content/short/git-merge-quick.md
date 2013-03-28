@@ -1,4 +1,4 @@
-date: 2013-02-20
+date: 2013-03-15 00:00:00
 tags: [git]
 title: Git - Merge last branch into master
 

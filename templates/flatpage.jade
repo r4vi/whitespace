@@ -7,6 +7,10 @@ block content
   article
     header
       - if page.meta.date
-        time.pubdate(datetime=page.meta.date)='published ' + page.meta.date
+        time.pubdate(datetime=page.meta.date)
+          span.icon-calendar
+          &nbsp;
+          =page.meta.date.strftime('%B %Y')
+
       h1(class='title')= page.title
     =page.html|safe

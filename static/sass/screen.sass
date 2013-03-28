@@ -84,7 +84,6 @@ hr
 pre > code
   line-height: 1
   font-family: monospace 
-  +prefix(1)
   font-size: 0.75rem
   display: block
   background-color: lighten($low-light, 75%)
@@ -129,7 +128,7 @@ article
   &.photo
     +reset-columns
     position: fixed
-    top: 0
+    top: auto
     left: 0
     min-height: 100%
     min-width: 100%
@@ -141,8 +140,8 @@ article
     > h1.title
       +float-left
     > time.pubdate
-      +pill
-      //color: lighten($low-light, 55%)
+      //+pill
+      color: lighten($low-light, 55%)
       +float-right
 
 li.index
@@ -182,15 +181,43 @@ article
     +at-breakpoint($break)
       +span-columns($total-columns - 6)
       +omega
-
+  .bio
+    clear: both
 
 .milestones
+  .milestone
+    a
+      h3
+        &:hover
+          color: $orange-clouds
+    margin-bottom: 2rem
+    border-radius: 15px
+    border-color: rgba(199, 199, 201, 0.2)
+    border-style: solid
+    border-width: 2px
+    padding: 5px
+    .wrap
+      +at-breakpoint($break)
+        display: table
+        .markdown
+          display: table-cell
+          vertical-align: middle
+
+      +clearfix
+      img
+        border-radius: 15px
+        float: left
+        margin:  1rem
   h1,h2,h3,h4,h5
     margin-bottom: 0.25rem
-    text-align: justify
     color: lighten($low-light, 10%)
+    line-height: 100%
     a
       font-size: 1rem
   .subtitle
     color: lighten($low-light, 30%)
     text-align: right
+  p.status
+    text-align: right
+    font-variant-caps: all-small-caps
+    font-size: 0.25em
