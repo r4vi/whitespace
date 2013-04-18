@@ -4,7 +4,7 @@ block append css
   link(rel='stylesheet', href='/static/github-pygments.css')
 
 block content
-  article
+  article.flatpage
     header
       - if page.meta.date
         time.pubdate(datetime=page.meta.date)

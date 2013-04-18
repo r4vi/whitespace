@@ -2018,25 +2018,56 @@ article > header > h1::after {
   border-radius: 15px;
   float: left;
   margin: 1rem;
+  max-width: none;
 }
-/* line 211, ../sass/screen.sass */
+/* line 212, ../sass/screen.sass */
 .milestones h1, .milestones h2, .milestones h3, .milestones h4, .milestones h5 {
   margin-bottom: 0.25rem;
   color: #4e5360;
   line-height: 100%;
 }
-/* line 215, ../sass/screen.sass */
+/* line 216, ../sass/screen.sass */
 .milestones h1 a, .milestones h2 a, .milestones h3 a, .milestones h4 a, .milestones h5 a {
   font-size: 1rem;
 }
-/* line 217, ../sass/screen.sass */
+/* line 218, ../sass/screen.sass */
 .milestones .subtitle {
   color: #7e8596;
   text-align: right;
 }
-/* line 220, ../sass/screen.sass */
+/* line 221, ../sass/screen.sass */
 .milestones p.status {
   text-align: right;
   font-variant-caps: all-small-caps;
   font-size: 0.25em;
+}
+
+/* line 226, ../sass/screen.sass */
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding-left: 11px;
+  color: #555555;
+  margin: 14px 0;
+}
+
+/* line 232, ../sass/screen.sass */
+p {
+  margin: 0 0 1rem;
+}
+
+/* line 235, ../sass/screen.sass */
+strong {
+  font-weight: bold;
+}
+
+/* line 238, ../sass/screen.sass */
+img, object, video {
+  max-width: 100%;
+}
+
+/* line 242, ../sass/screen.sass */
+article.flatpage img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }

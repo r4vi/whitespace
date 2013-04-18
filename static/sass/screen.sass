@@ -208,6 +208,7 @@ article
         border-radius: 15px
         float: left
         margin:  1rem
+        max-width: none
   h1,h2,h3,h4,h5
     margin-bottom: 0.25rem
     color: lighten($low-light, 10%)
@@ -221,3 +222,24 @@ article
     text-align: right
     font-variant-caps: all-small-caps
     font-size: 0.25em
+
+blockquote
+  border-left: 4px solid #ddd
+  padding-left: 11px
+  color: #555
+  margin: 14px 0
+
+p
+  margin: 0 0 1rem
+
+strong
+  font-weight: bold
+
+img, object, video
+  max-width: 100%
+
+article.flatpage
+  img
+    margin-left: auto
+    margin-right: auto
+    display: block

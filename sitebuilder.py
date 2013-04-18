@@ -106,7 +106,7 @@ def short_index():
 
 @app.route('/post/')
 def post_index():
-    posts = MODELS.get('posts')
+    posts = [p for p in MODELS.get('posts') if 'draft' not in p.meta.get('tags', [])]
     return render_template('post_index.jade', posts=posts, title='Posts')
 
 @app.route('/photo/')
@@ -155,6 +155,14 @@ def favicon():
         app.root_path, 'static', 'images'), 
       'favicon.ico', 
       mimetype='image/vnd.microsoft.icon') 
+
+@app.route('/robots.txt')
+def robots():
+    return send_from_directory(
+      os.path.join(
+        app.root_path, 'static'), 
+      'robots.txt', 
+      mimetype='text/plain') 
 
 @freezer.register_generator
 def page():
