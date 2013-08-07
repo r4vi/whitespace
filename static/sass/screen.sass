@@ -40,7 +40,7 @@ html
   color: $low-light
 
 h1
-  font-size: 2.813rem
+  font-size: 2.713rem
 
 h2
   font-size: 2.25rem
@@ -55,6 +55,13 @@ h5
 h1,h2,h3,h4,h5
   line-height: 125%
   margin-bottom: 1.25rem
+
+em
+  font-style: italic
+
+code
+  font-family: 'Consolas', 'Ubuntu Mono', monospace
+  background-color: lighten($low-light, 75%)
 
 #main
   +container($total-columns, $break)
@@ -83,7 +90,7 @@ hr
 
 pre > code
   line-height: 1
-  font-family: monospace 
+  font-family: 'Consolas', 'Ubuntu Mono', monospace 
   font-size: 0.75rem
   display: block
   background-color: lighten($low-light, 75%)
@@ -122,6 +129,7 @@ pre > code
 
   footer
     font-size: 0.875rem
+    margin-bottom: 1rem
     color: lighten($low-light, 20%)
 
 article
@@ -243,3 +251,11 @@ article.flatpage
     margin-left: auto
     margin-right: auto
     display: block
+
+
+.cv .row .row-item
+  display: inline-block
+  &:last-child
+    margin-right: 3rem
+    float: right
+    +clearfix

@@ -112,8 +112,12 @@ def post_index():
 @app.route('/photo/')
 def photo_index():
     photos = MODELS.get('photos')
-
     return render_template('photo_index.jade', photos=photos, title='Photos')
+
+
+@app.route('/cv/')
+def cv_index():
+    return render_template('cv.jade', title='Curriculum Vitae')
 
 def _to_default_dict(d):
     orig = d.get('Original')
