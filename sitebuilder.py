@@ -16,6 +16,7 @@ import flask_assets
 from settings import FLICKR_API_KEY, FLICKR_API_SECRET
 from webassets import Bundle
 from werkzeug.contrib.atom import AtomFeed
+import pyjade
 
 DEBUG = True
 if len(sys.argv) > 1:
@@ -25,12 +26,21 @@ if len(sys.argv) > 1:
 FLATPAGES_AUTO_RELOAD = DEBUG
 FLATPAGES_EXTENSION = '.md'
 FLATPAGES_ROOT = './content/'
-FLATPAGES_HTML_RENDERER = lambda x: markdown2.markdown(x, extras=["footnotes", 
-                                                "fenced-code-blocks",
-                                                "header-ids",
-                                                "smarty-pants"])
+FLATPAGES_HTML_RENDERER = lambda x: markdown2.markdown(x, 
+        extras=[
+            "fenced-code-blocks",
+            "header-ids",
+            "cuddled-lists",
+            "wiki-tables",
+            "smarty-pants"
+            "footnotes", 
+            ])
 SITE_NAME = 'Ravi - Pickled Lime'
 SITE_ROOT = 'http://ravi.pckl.me'
+
+@pyjade.register_filter('markdown')
+def markdown(x,y):
+    return FLATPAGES_HTML_RENDERER(x)
 
 app = Flask(__name__)
 app.config.from_object(__name__)
@@ -39,6 +49,8 @@ app.config['ASSETS_DEBUG'] = DEBUG
 assets = flask_assets.Environment(app)
 assets.init_app(app)
 assets.debug = DEBUG
+
+
 
 app.jinja_env.add_extension('webassets.ext.jinja2.AssetsExtension')
 app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')

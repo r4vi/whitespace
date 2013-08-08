@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="668.1795"
+   height="674.76013"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="drawing.svg">
+  <defs
+     id="defs4">
+    <filter
+       id="filter3943"
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow">
+      <feFlood
+         id="feFlood3945"
+         flood-opacity="0.096"
+         flood-color="rgb(0,0,0)"
+         result="flood" />
+      <feComposite
+         id="feComposite3947"
+         in2="SourceGraphic"
+         in="flood"
+         operator="in"
+         result="composite1" />
+      <feGaussianBlur
+         id="feGaussianBlur3949"
+         in="composite"
+         stdDeviation="0.8"
+         result="blur" />
+      <feOffset
+         id="feOffset3951"
+         dx="1"
+         dy="1"
+         result="offset" />
+      <feComposite
+         id="feComposite3953"
+         in2="offset"
+         in="SourceGraphic"
+         operator="over"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix3955" />
+      <feFlood
+         id="feFlood3957"
+         flood-opacity="0.096"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         in="fbSourceGraphic" />
+      <feComposite
+         id="feComposite3959"
+         in2="fbSourceGraphic"
+         in="flood"
+         operator="in"
+         result="composite1" />
+      <feGaussianBlur
+         id="feGaussianBlur3961"
+         in="composite"
+         stdDeviation="0.8"
+         result="blur" />
+      <feOffset
+         id="feOffset3963"
+         dx="1"
+         dy="1"
+         result="offset" />
+      <feComposite
+         id="feComposite3965"
+         in2="offset"
+         in="fbSourceGraphic"
+         operator="over"
+         result="composite2" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="401.54419"
+     inkscape:cy="470.72987"
+     inkscape:document-units="px"
+     inkscape:current-layer="g3967"
+     showgrid="true"
+     inkscape:window-width="936"
+     inkscape:window-height="808"
+     inkscape:window-x="2812"
+     inkscape:window-y="227"
+     inkscape:window-maximized="0"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2996"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       originx="-146.96875px"
+       originy="-724.79968px" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-146.96875,347.19765)">
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="181.82745"
+       y="234.13863"
+       id="text3004"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3006"
+         x="181.82745"
+         y="234.13863" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:London Tube;-inkscape-font-specification:London Tube"
+       x="-250.51784"
+       y="179.59039"
+       id="text2986"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2988"
+         x="-250.51784"
+         y="179.59039" /><tspan
+         sodipodi:role="line"
+         id="tspan2990"
+         x="-250.51784"
+         y="229.59039" /></text>
+    <g
+       id="g2998"
+       inkscape:export-filename="/home/ravi/hnlondon_logo_small.png"
+       inkscape:export-xdpi="16.540001"
+       inkscape:export-ydpi="16.540001">
+      <rect
+         y="153.32642"
+         x="147.48227"
+         height="173.74623"
+         width="173.74623"
+         id="rect3002"
+         style="fill:#ff6500;fill-opacity:1;stroke:#ffffff" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text2992"
+         y="291.67953"
+         x="194.39539"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Johnson;-inkscape-font-specification:Johnson"
+         xml:space="preserve"><tspan
+           style="font-size:144px;font-weight:bold;fill:#ffffff;font-family:London Tube;-inkscape-font-specification:London Tube Bold"
+           y="291.67953"
+           x="194.39539"
+           id="tspan2994"
+           sodipodi:role="line">L</tspan></text>
+    </g>
+    <g
+       transform="translate(-0.01351929,-500.01015)"
+       id="g2998-3"
+       inkscape:export-filename="/home/ravi/hnlondon_big.png"
+       inkscape:export-xdpi="16.480686"
+       inkscape:export-ydpi="16.480686">
+      <g
+         id="g3967">
+        <rect
+           style="fill:#ff6500;fill-opacity:1;stroke:#ffffff"
+           id="rect3002-3"
+           width="173.74623"
+           height="173.74623"
+           x="151.69821"
+           y="153.32642"
+           inkscape:export-filename="/home/ravi/code/pckl.me/static/images/content/hnlondon_big.png"
+           inkscape:export-xdpi="16.673752"
+           inkscape:export-ydpi="16.673752" />
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Johnson;-inkscape-font-specification:Johnson"
+           x="155.52945"
+           y="280.23953"
+           id="text2992-2"
+           sodipodi:linespacing="125%"
+           inkscape:export-filename="/home/ravi/code/pckl.me/static/images/content/hnlondon_big.png"
+           inkscape:export-xdpi="16.673752"
+           inkscape:export-ydpi="16.673752"><tspan
+             sodipodi:role="line"
+             id="tspan2994-3"
+             x="155.52945"
+             y="280.23953"
+             style="font-size:112px;font-weight:bold;fill:#ffffff;font-family:London Tube;-inkscape-font-specification:London Tube Bold">HN</tspan></text>
+        <text
+           sodipodi:linespacing="125%"
+           id="text3032"
+           y="290.67154"
+           x="340.01352"
+           style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:none;fill-opacity:1;stroke:#ff6500;font-family:Johnson;-inkscape-font-specification:Johnson;opacity:1;stroke-opacity:1;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-linejoin:miter;filter:url(#filter3943)"
+           xml:space="preserve"
+           inkscape:export-filename="/home/ravi/code/pckl.me/static/images/content/hnlondon_big.png"
+           inkscape:export-xdpi="16.673752"
+           inkscape:export-ydpi="16.673752"><tspan
+             style="font-size:144px;font-family:London Tube;-inkscape-font-specification:London Tube;stroke:#ff6500;stroke-opacity:1;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-opacity:1;stroke-linejoin:miter"
+             y="290.67154"
+             x="340.01352"
+             id="tspan3034"
+             sodipodi:role="line">London</tspan></text>
+        <flowRoot
+           xml:space="preserve"
+           id="flowRoot3975"
+           style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Johnson;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Johnson"><flowRegion
+             id="flowRegion3977"><rect
+               id="rect3979"
+               width="778.57141"
+               height="290"
+               x="-31.428572"
+               y="-43.811298" /></flowRegion><flowPara
+             id="flowPara3981"></flowPara></flowRoot>      </g>
+    </g>
+  </g>
+</svg>

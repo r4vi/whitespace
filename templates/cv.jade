@@ -1,0 +1,182 @@
+extends base
+
+block extrahead
+  meta(name="robots", content="noindex")
+
+block content
+  h1.title
+    ='Curriculum Vitae'
+  h2='Ravi Kotecha'
+  h4='Full Stack Software Developer'
+  :markdown
+    ##### What I can do for you?
+    I'm available to do development projects. I usually work in `Python`, but 
+    sometimes you'll catch me working in `JavaScript` on `nodejs`. 
+    For large web projects I like `Django`, for small ones I like `Flask`.
+
+    ##### Any examples?
+    Most recently at [Pitchup.com](http://www.pitchup.com), I have helped the 
+    company grow from myself and the [founder](http://www.pitchup.com/) 
+    working in a coffee shop to 
+    the biggest online camping booking service in Europe in just over two years.
+
+    ##### Values
+    I believe software should be shipped often, that features should land early, 
+    that users' productivity is more important than large documents containing 
+    specifications. Talk is expensive, experiments are cheaper. 
+
+    I steer clear of anything that resembles spam, scams or ponzi schemes.
+
+    ##### Am I right for your company?
+    I enjoy working with small companies where I can make a large impact
+    on success or failure.
+    One of my favourite quotes from [Paul Graham](http://www.paulgraham.com/) is:
+    > "A startup is like a mosquito. A bear can absorb a hit and a crab is armored against one, but a mosquito is designed for one thing: to score. No energy is wasted on defense. The defense of mosquitos, as a species, is that there are a lot of them, but this is little consolation to the individual mosquito."
+
+    If this resonates with your organisation; if you're trying to take on
+    entrenched incumbents; if you're ambitious and looking to grow quickly then 
+    I want to work with you.
+    
+    ##### One more thing...
+    Aside from helping you with the technical side of your business I'm extremely
+    business focused. Unlike many developers I understand that there is a fine
+    line between writing technically perfect software and making compromises 
+    so that the business can grow.
+
+    I can also help you with your fund-raising [pitches](http://dl.dropboxusercontent.com/u/811105/code-projects/TripMediPitchPublic.pdf),
+    sales commission structuring, marketing ROI measurement and aligning your
+    product with your business objectives.
+
+  div.cv
+    p="For a more traditional CV see below."
+    hr
+    h3="Employment"
+    div.row
+      h4.row-item="Pitchup.com, London"
+      p.row-item="2011-2013"
+    h5='Lead Developer'
+    :markdown
+      I joined Pitchup.com as a freelance developer on a short term contract
+      but ended up staying for over two years. During this time I was ultimately
+      in charge of all technology and managing the rest of the technical team.
+      
+      Detailed achievements:
+
+      * Responsible for all technology at Pitchup.com
+      * Creating mobile app API and supervise external agency on building Android and iOS apps
+      * Building a process for Pitchup.com's sales department with real time synchronisation between Saleforce and Pitchup.com 
+      * Front-end web design
+      * Developing new features for Pitchup.com's Django backend
+      * Building geospatial features using PostGIS
+      * Scale Pitchup.com to handle an order of magnitude users more users
+      * Performance engineering to reduce web application response times by 75%
+      * Create Supplier API allowing suppliers to send vacancies directly to Pitchup.com's backend
+      * Interviewing and hiring new members of the technical team
+      * Building a faceted camping search engine using Apache Solr with black box ranking algorithm optimised for revenue and probability of conversion
+      * Maintaining and designing Pitchup.com's server architecture, a hybrid physical and cloud setup that can scale with Pitchup.com's seasonal traffic
+      * Real-time inventory and expected revenue based CPC system to optimise Google AdWords bidding
+
+
+    div.row
+      h4.row-item="Standard Bank, London"
+      p.row-item='2007-2010'
+    h5="Front office Commodities Developer"
+    :markdown
+      Detailed achievements:
+
+      * Lead Developer for in-house web-based precious metals trading portal:
+        * This portal allows clients to trade precious metals OTC contracts over the Internet. These trades are automatically and immediately hedged by using Futures contracts on COMEX.
+          * I designed the n-tier—fault tolerant—back-end server including exchange connectivity via FIX using the QuickFix open-source library, the price streaming component and the web front end (ASP.NET and jQuery).
+      * Developer for in-house trading and risk management system:
+          * Major database refactoring to remove third-party framework, improving stability and performance.
+          * WinForms development and UI design working closely with traders to create an interface that is both quick and logical to use.
+          * Integration of new products by wrapping Quant DLLs.
+          * Developing Excel add-in functionality using VSTO to expose pricing functions so that users can integrate them into their own spreadsheets.
+      * Replaced legacy Java API based trade feed from the Intercontinental Exchange with new FIX based feed.
+          * Due to resource constraints I was given this project less than three weeks before ICE were due to turn off their Java API. I successfully designed, implemented and tested the FIX based replacement in those three weeks. 
+
+    h5="Graduate Software Developer"
+    :markdown
+      *Rotational role where I gained experience in a number of different areas in the IT department.*
+
+      Detailed achievements:
+      * Designed a payments reconciliation engine and oversaw a contractor to carry out the implementation work.
+      * Production and overnight support for the bank’s main FX booking system.
+      * Developed a P&L reconciliation and reporting system for the Financial Risk Management department using Python, Sybase and the Pylons web framework to run on Solaris.
+    div.row
+      h4.row-item="3M UK PLC, Berkshire"
+      p.row-item='2005-2006'
+    h5="Technical Infrastructure Analyst"
+    :markdown
+      *Placement year role during sandwich year of my degree.*
+
+      Highlights:
+      * Technical project management on upgrade of mobile sync platform. Managing a geographically dispersed team of fifteen people.
+      * LotusNotes application maintenance, administration and occasional development.
+      * Windows Cluster configuration and set-up.
+
+    div.row
+      h4.row-item="Jessops Group"
+      p.row-item='2001-2005'
+    h5='Various Part-Time and Summer Roles'
+    :markdown
+      Highlights:
+      * Configuration, build and roll-out of over 250 Linux servers to the branches.
+      * Chip and pin roll-out to entire branch network. 
+
+    h3="Technical Skills"
+    h4="Programming Languages"
+    :markdown
+      || **Language** || **Level** || *Comment* ||
+      || Python       || Advanced  || Strong commercial experience ||
+      || JavaScript / CoffeScript  || Advanced  || Strong commercial experience in both the browser and `nodejs` ||
+      || C#           || Advanced  || Strong commercial experience ||
+      || Clojure      || Intermediate  || Used mostly for personal projects ||
+      || Ruby/Rails      || Intermediate  || Built the candidate application workflow for the [StartupBus](http://www.startupbus.com/) using Rails ||
+      || Java           || Intermediate  || Main language used during my degree, however I may be a bit rusty ||
+    h4="Other Skills"
+    :markdown
+      || **Platform** || Linux, FreeBSD, Solaris, Windows  ||
+      || **Database** || MS-SQL, PostgreSQL, MySQL, sqlite, CouchDB, MongoDB, Redis  ||
+      || **Tools**    || Git, Vagrant, Chef, Amazon Web Services, TravisCI, nginx, memcached, Varnish ||
+
+    h3='Education'
+    p.row
+      span.row-item
+          em="Computer Science"
+          , BSc (Hons), Aston University, Birmingham,
+          strong="First Class"
+      span.row-item="2002-2007"
+    :markdown
+      Four year course with a year in industry, my dissertation focused on information 
+      security and the identification and mitigation of buffer overflow exploits.
+
+    h3="Training"
+    p.row
+      span.row-item="Project Management and PRINCE2 Fundamentals"
+      span.row-item="2008"
+    p.row
+      span.row-item="Design Patterns"
+      span.row-item="2008"
+    p.row
+      span.row-item="SIMARCH Investment Banking Simulation"
+      span.row-item="2007"
+    p.row
+      span.row-item="Introduction to Microsoft SQL2005 / TSQL"
+      span.row-item="2007"
+    p.row
+      span.row-item="Intermediate C#"
+      span.row-item="2007"
+    p.row
+      span.row-item="Introduction to Financial Markets (Intensive Course)"
+      span.row-item="2007"
+    p.row
+      span.row-item="Chartered Management Institute Certificate in Management Level 3"
+      span.row-item="2005"
+    h3="References"
+    :markdown
+      Available on [request](/contact)
+    h3="Recruiters"
+    :markdown
+      If you're a recruitment agency, find out how to work with me
+        [here](http://www.youtube.com/watch?v=IAISUDbjXj0")
