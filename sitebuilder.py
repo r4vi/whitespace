@@ -5,7 +5,7 @@ import itertools
 from urlparse import urljoin
 import datetime
 from commands import handle_command
-from flask import Flask, render_template, send_from_directory, request
+from flask import Flask, render_template, send_from_directory, request, json, g
 from flask_flatpages import FlatPages
 import flickr
 import markdown2
@@ -33,6 +33,7 @@ FLATPAGES_HTML_RENDERER = lambda x: markdown2.markdown(x,
             "cuddled-lists",
             "wiki-tables",
             "smarty-pants"
+            "toc",
             "footnotes", 
             ])
 SITE_NAME = 'Ravi - Pickled Lime'
@@ -74,6 +75,7 @@ MODELS['all'] = sorted(itertools.chain.from_iterable(MODELS.values()), key=lambd
 @app.before_request
 def before_req():
     if DEBUG:
+        g.DEBUG = True
         global MODELS
         # in debug mode, refresh models on every request
         MODELS = {
@@ -83,6 +85,7 @@ def before_req():
             'milestones': sorted([p for p in pages if p.path.startswith('milestone/')], key=lambda x: x.meta.get('date'), reverse=True),
             }
         MODELS['all'] = sorted(itertools.chain.from_iterable(MODELS.values()), key=lambda x: x.meta.get('date'), reverse=True)
+
 
 def make_external(url):
     return urljoin(SITE_ROOT, url)
