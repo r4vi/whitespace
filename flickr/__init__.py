@@ -46,7 +46,7 @@ def image_info(photo_id):
 
     ret =  {
         'title': unicode(resp.photo.title),
-        'tags': map(lambda x: str(x.text), resp.photo.tags.getchildren()),
+        'tags': map(lambda x: unicode(x.text).encode('utf-8'), resp.photo.tags.getchildren()),
         'sizes': sizes,
         'bgcolor': 'rgb({},{},{})'.format(*average_color)
     }

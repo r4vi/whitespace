@@ -61,14 +61,20 @@ compass = Compass(app)
 
 common_js = Bundle('js/modernizr.custom.59903.js', 'js/jquery-1.9.1.min.js', output='js/gen/common.js', filters='rjsmin')
 photo_js = Bundle('coffeescript/imagebg.coffee', output='js/gen/imagebg.js', filters='coffeescript,rjsmin')
+equalheights_js = Bundle('js/jquery.equalheights.min.js', output='js/gen/equalheights.js', filters='rjsmin')
+
 assets.register('photo_js', photo_js)
 assets.register('common_js', common_js)
+assets.register('equalheights_js', equalheights_js)
 
+
+
+live_pages = [x for x in pages if not x.meta.get('draft', False)]
 MODELS = {
-    'shorts': sorted([p for p in pages if p.path.startswith('short/')], key=lambda x: x.meta.get('date'), reverse=True),
-    'posts': sorted([p for p in pages if p.path.startswith('post/')], key=lambda x: x.meta.get('date'), reverse=True),
-    'photos': sorted([p for p in pages if p.path.startswith('photo/')], key=lambda x: x.meta.get('date'), reverse=True),
-    'milestones': sorted([p for p in pages if p.path.startswith('milestone/')], key=lambda x: x.meta.get('date'), reverse=True),
+    'shorts': sorted([p for p in live_pages if p.path.startswith('short/')], key=lambda x: x.meta.get('date'), reverse=True),
+    'posts': sorted([p for p in live_pages if p.path.startswith('post/')], key=lambda x: x.meta.get('date'), reverse=True),
+    'photos': sorted([p for p in live_pages if p.path.startswith('photo/')], key=lambda x: x.meta.get('date'), reverse=True),
+    'milestones': sorted([p for p in live_pages if p.path.startswith('milestone/')], key=lambda x: x.meta.get('date'), reverse=True),
 }
 MODELS['all'] = sorted(itertools.chain.from_iterable(MODELS.values()), key=lambda x: x.meta.get('date'), reverse=True)
 
@@ -79,10 +85,10 @@ def before_req():
         global MODELS
         # in debug mode, refresh models on every request
         MODELS = {
-            'shorts': sorted([p for p in pages if p.path.startswith('short/')], key=lambda x: x.meta.get('date'), reverse=True),
-            'posts': sorted([p for p in pages if p.path.startswith('post/')], key=lambda x: x.meta.get('date'), reverse=True),
-            'photos': sorted([p for p in pages if p.path.startswith('photo/')], key=lambda x: x.meta.get('date'), reverse=True),
-            'milestones': sorted([p for p in pages if p.path.startswith('milestone/')], key=lambda x: x.meta.get('date'), reverse=True),
+            'shorts': sorted([p for p in live_pages if p.path.startswith('short/')], key=lambda x: x.meta.get('date'), reverse=True),
+            'posts': sorted([p for p in live_pages if p.path.startswith('post/') and (not getattr(p, 'draft', False))], key=lambda x: x.meta.get('date'), reverse=True),
+            'photos': sorted([p for p in live_pages if p.path.startswith('photo/')], key=lambda x: x.meta.get('date'), reverse=True),
+            'milestones': sorted([p for p in live_pages if p.path.startswith('milestone/')], key=lambda x: x.meta.get('date'), reverse=True),
             }
         MODELS['all'] = sorted(itertools.chain.from_iterable(MODELS.values()), key=lambda x: x.meta.get('date'), reverse=True)
 
@@ -103,8 +109,8 @@ def recent_feed():
                     feed_url=urljoin(SITE_ROOT, 'feed.atom'),
                     url=SITE_ROOT)
     posts = MODELS.get('all')[:25]
+    
     for post in posts:
-
         feed.add(post.meta.get('title', 'untitled'),
                  post.html,
                  content_type='html',
@@ -144,13 +150,19 @@ def _to_default_dict(d):
 def photo_entry(path):
     full_path = 'photo/' + path
     page = pages.get_or_404(full_path)
+    all_photos = MODELS.get('photos')
+    idx = all_photos.index(page)
+    prev_page = all_photos[idx-1]
+    next_page = all_photos[(idx+1) % len(all_photos)]
 
     sizes = _to_default_dict(page.meta.get('sizes')) or flickr.sizes_from_id(page.meta.get('photo_id'))
 
     return render_template('photo.jade', page=page,
         sizes=sizes,
         title=page.meta.get('title', 'Untitled'),
-        bgcolor=page.meta.get('bgcolor')
+        bgcolor=page.meta.get('bgcolor'),
+        prev_page = '/'+ prev_page.path,
+        next_page = '/' + next_page.path
     )
 
 @app.route('/<path:path>/')
@@ -185,7 +197,7 @@ def robots():
 
 @freezer.register_generator
 def page():
-    for p in pages:
+    for p in live_pages:
         yield {'path': p.path}
 
 if __name__ == "__main__":
