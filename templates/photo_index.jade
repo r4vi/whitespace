@@ -1,12 +1,24 @@
 extends base
 
+
+block append scripts
+  - assets 'equalheights_js'
+    script
+      Modernizr.load({
+        load: '{{ ASSET_URL }}',
+        complete: function(){
+            $("figure.photo_index > a > img").equalHeights();
+            $("figure.photo_index").equalHeights();
+        }
+      })
+  - endassets
+
 block content
   h1.title=title
-  ul
+  div#photo_index
     each photo in photos
-      li.index
-        a(href='/' + photo.path)=photo.title
-        time.pubdate(datetime=photo.meta.date)
-          span.icon-calendar
-          =photo.meta.date.strftime('%d %B %Y')
+      figure.photo_index
+        a(href='/' + photo.path)
+          img(src=photo.sizes['Small'].source)
+          figcaption=photo.title
 

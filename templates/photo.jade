@@ -7,6 +7,10 @@ block append scripts
         load: '{{ ASSET_URL }}',
         complete: function(){
           __pckl.Photo.init();
+          __pckl.Nav = __pckl.Nav || {};
+          __pckl.Nav['prev'] = '{{ prev_page }}';
+          __pckl.Nav['next'] = '{{ next_page }}';
+          __pckl.Nav.init();
         }
       })
   - endassets

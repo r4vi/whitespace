@@ -1,4 +1,4 @@
-title: UKUncooked
+title: "UKUncooked: Foursquare App"
 date: 2013-02-05 00:00:00
 link: https://foursquare.com/app/ukuncooked/3V0XVFLR0MRPWHMMQZWJQ4CZVNOFBMCTNNREU4ECKVM3ACCY
 subtitle: Project / Creator
