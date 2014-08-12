@@ -5,7 +5,7 @@ block content
   ul
     each short in shorts
       li.index
-        a(href='/' + short.path)=short.title
+        a(href='/#{short.path}')=short.title
         - if short.meta.date
           time.pubdate(datetime=short.meta.date)
             span.icon-calendar

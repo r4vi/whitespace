@@ -140,6 +140,10 @@ def photo_index():
 def cv_index():
     return render_template('cv.jade', title='Curriculum Vitae')
 
+@app.route('/cv/recruiters/')
+def cv_recruiters():
+    return render_template('cv_recruiters.jade', title='Tips for Recruiters')
+
 def _to_default_dict(d):
     orig = d.get('Original')
     ret = defaultdict(lambda: orig)

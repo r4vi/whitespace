@@ -6,7 +6,7 @@ block content
     - if posts
       each post in posts
         li.index
-          a(href='/' + post.path)=post.title
+          a(href='/#{post.path}')=post.title
           - if post.meta.date
             time.pubdate(datetime=post.meta.date)
               span.icon-calendar

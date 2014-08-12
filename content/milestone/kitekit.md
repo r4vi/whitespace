@@ -1,4 +1,4 @@
-date: 2014-12-20 18:48:06.654695
+date: 2013-12-20 18:48:06.654695
 title: "Kitekit: A Framework for Hyperpersonalised Fiction"
 link: http://kitekit.pckl.me/
 subtitle: Project / Creator

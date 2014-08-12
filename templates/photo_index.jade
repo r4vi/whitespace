@@ -18,7 +18,7 @@ block content
   div#photo_index
     each photo in photos
       figure.photo_index
-        a(href='/' + photo.path)
+        a(href='/#{photo.path}')
           img(src=photo.sizes['Small'].source)
           figcaption=photo.title
 
