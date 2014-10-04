@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from collections import defaultdict
 from operator import itemgetter
 import sys, os
@@ -197,7 +198,15 @@ def robots():
       os.path.join(
         app.root_path, 'static'), 
       'robots.txt', 
-      mimetype='text/plain') 
+      mimetype='text/plain')
+
+@app.route('/keybase.txt')
+def keybase():
+    return send_from_directory(
+        os.path.join(
+            app.root_path, 'static'),
+        'keybase.txt',
+        mimetype='text/plain')
 
 @freezer.register_generator
 def page():

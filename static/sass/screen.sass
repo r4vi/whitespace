@@ -16,6 +16,7 @@ $morning-light: rgb(222,225,182)
 $soft-orange: rgb(225,184,102)
 $orange-clouds: rgb(189,85,50)
 $low-light: rgb(55,59,68)
+$spooky: ghostwhite
 
 $ie: false
 
@@ -35,9 +36,10 @@ $ie: false
 html
   font-size: 125%
   line-height: 150%
-  @include image-2x('/static/images/cubes', 'png', 4px, 4px)
   font-family: 'Garamond', 'Georgia', serif
   color: $low-light
+  +background-image(linear-gradient(top, $spooky 0%, transparent 100%))
+  background-attachment: fixed
 
 h1
   font-size: 2.713rem
@@ -273,7 +275,10 @@ article.flatpage
     margin-left: auto
     margin-right: auto
     display: block
-
+  iframe.youtube
+    margin-left: auto
+    margin-right: auto
+    display: block
 
 .cv .row .row-item
   display: inline-block

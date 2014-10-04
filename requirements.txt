@@ -10,7 +10,6 @@ PyYAML==3.10
 Pygments==1.6
 Werkzeug==0.8.3
 argparse==1.2.1
-flickrapi==1.4.2
 ipdb==0.7
 ipython==0.13.1
 lxml==3.1.0
@@ -24,3 +23,4 @@ six==1.2.0
 webassets==0.8
 wsgiref==0.1.2
 Pillow==2.5.1
+flickrapi==1.4.4

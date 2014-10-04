@@ -1,0 +1,63 @@
+==================================================================
+https://keybase.io/r4vi
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://ravi.pckl.me
+  * I am r4vi (https://keybase.io/r4vi) on keybase.
+  * I have a public key with fingerprint F8E4 91B4 4765 9C8C A11C  09A8 A48B 120F E8C8 1295
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "f8e491b447659c8ca11c09a8a48b120fe8c81295",
+            "host": "keybase.io",
+            "key_id": "a48b120fe8c81295",
+            "uid": "749c690311be6f4ae8d9e99758736a00",
+            "username": "r4vi"
+        },
+        "service": {
+            "hostname": "ravi.pckl.me",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1412436926,
+    "expire_in": 157680000,
+    "prev": "89370aa6781eb25d4de21c212d3f0ed6be942de814480d210e19a91a0106d0d1",
+    "seqno": 13,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owFtUV1IU1Ec36ZFiuKamlBBdUdPjXXP3d3dOct6iRCziJyUhrLOvfdsXrTdde+2
+/HzQnkK0hASJyj0YmtHXBn2aTgsKbX2IlJgYKOkIQlKiEoLulXzrvBz+v6///8//
+UnaawWTsbbPkpF5ZuozjiSXeUEbnjjZSvCzWU+5GqoasfT4p4CdKUJECIcpN+SBh
+EeBZ1sU5kQAFDIBAIwwxC3nA0D4CBQgY5KRsVLWs6g4thscqsUuyhmmFVxI19D/6
+8BrhYpHAIdoBAE84H4sJFBFByOWELgeHaVoXqkQJ4DNEUytsRKKabZSGRCSB6PPq
+bddZHJHsQaGm1q6VNiqoyCFZkGs1pjoUCrp1Y6g+qCvPEd77L8PLSwFR21kzRIii
+SnKAcgNNKYQkPRSwgGEdHGI4G0XqgpJCvJKucLo4SGtPb0MiWiREDheNMeeCgPCM
+U2RFwgCBAYzo8NFE5HiCWEYkELAspEUG0AQgjACmAc2JtAgofauzAVnLdmhzYr+W
+qUr+AA6FFUI1Z14wbk83GE2GjRtM+t0MmRnm9WtGLZsMU6+fmhoqDUN1I4Mvpzw9
+9cmB1vKx2IerrW8Xv/8eOJz309P94Noyzv/yMS/1ftI8MdcyPVx1OrprW2lVInwl
+ijrNKXVgbrhsz/mJLDhYGb+11Kqc+tWyv7v/QPH9wpWZ6EW1ozOVGBXHjhblriRu
+5lifCTF/oZC/WGdtGj4S88Dx5TaP/VBlvLGkIZneMV9wsm+hqljsWygv3d2U/6n9
+7uctpi6Wfjhj3Qyb0LvnPSzfssruHLp3uRwebz/2aLYicX1H7GvKuDV777fkjejB
+x3VxsSD2pu3F7ImitPA+S1GsZF69M9Ibr7AmnUsjq3+eZP3IuD1uHpvG/ZPcXw==
+=z8n5
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/r4vi
+
+==================================================================
