@@ -1,3 +1,4 @@
+---
 date: 2014-10-04 11:04:49.622536
 title: Copy and Paste Driven Development
 tags:
@@ -5,7 +6,7 @@ tags:
     - javascript
     - python
     - sql
-
+---
 *This post isn't a rant about copy and pasting code you don't understand into your projects.*
     
 I was recently convinced by a college that declaring variables in ```javascript``` should be

@@ -1,4 +1,7 @@
+---
 title: Get in touch
+template: flatpage.jade
+---
 
 I'd love to hear what you're working on, especially if
 there an intersection with the things I'm working on

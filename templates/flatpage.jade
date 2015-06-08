@@ -6,11 +6,10 @@ block append css
 block content
   article.flatpage
     header
-      - if page.meta.date
-        time.pubdate(datetime=page.meta.date)
+      - if date
+        time.pubdate(datetime=date)
           span.icon-calendar
-          &nbsp;
-          =page.meta.date.strftime('%B %Y')
+          | &nbsp;
+          =date
 
-      h1(class='title')= page.title
-    =page.html|safe
+      h1(class='title')= title

@@ -1,3 +1,4 @@
+---
 date: 2013-09-29 00:02:56.705525
 title: "My Strange Loop 2013: Part 2"
 tags:
@@ -5,7 +6,7 @@ tags:
   - strangeloop
   - st louis
 draft: True
-
+---
 
 ### Making Software Development Make Sense to Everyone — Jen Myers
 
