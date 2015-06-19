@@ -1661,7 +1661,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   box-sizing: border-box;
 }
 
-/* line 30, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 36, ../sass/screen.sass */
 html {
   font-size: 125%;
   line-height: 150%;
@@ -1676,49 +1676,49 @@ html {
   background-attachment: fixed;
 }
 
-/* line 38, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 44, ../sass/screen.sass */
 h1 {
   font-size: 2.713rem;
 }
 
-/* line 41, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 47, ../sass/screen.sass */
 h2 {
   font-size: 2.25rem;
 }
 
-/* line 44, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 50, ../sass/screen.sass */
 h3 {
   font-size: 1.875rem;
 }
 
-/* line 46, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 52, ../sass/screen.sass */
 h4 {
   font-size: 1.5rem;
 }
 
-/* line 48, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 54, ../sass/screen.sass */
 h5 {
   font-size: 1.25rem;
 }
 
-/* line 51, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 57, ../sass/screen.sass */
 h1, h2, h3, h4, h5 {
   line-height: 125%;
   margin-bottom: 1.25rem;
 }
 
-/* line 55, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 61, ../sass/screen.sass */
 em {
   font-style: italic;
 }
 
-/* line 58, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 64, ../sass/screen.sass */
 code {
   font-family: "Consolas", "Ubuntu Mono", monospace;
   background-color: #fdfdfd;
 }
 
-/* line 62, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 68, ../sass/screen.sass */
 #main {
   *zoom: 1;
   max-width: 304px;
@@ -1738,7 +1738,7 @@ code {
   clear: both;
 }
 @media (min-width: 37em) {
-  /* line 62, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+  /* line 68, ../sass/screen.sass */
   #main {
     *zoom: 1;
     max-width: 592px;
@@ -1758,30 +1758,30 @@ code {
   }
 }
 
-/* line 67, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 73, ../sass/screen.sass */
 a {
   text-decoration: none;
   color: #6c311d;
 }
-/* line 70, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 76, ../sass/screen.sass */
 a:hover {
   color: #f6e4de;
   background-color: #7c5b18;
 }
-/* line 73, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 79, ../sass/screen.sass */
 a:visited {
   color: #a77a21;
 }
-/* line 75, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 81, ../sass/screen.sass */
 a:visited:hover {
   color: white;
 }
-/* line 77, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 83, ../sass/screen.sass */
 a:active {
   color: #7c5b18;
 }
 
-/* line 79, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 85, ../sass/screen.sass */
 hr {
   clear: both;
   border: 0;
@@ -1793,12 +1793,12 @@ hr {
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 2%, #73c8a9 40%, #dee1b6 50%, #e1b866 60%, #bd5532 70%, #373b44 95%, rgba(0, 0, 0, 0) 100%);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 2%, #73c8a9 40%, #dee1b6 50%, #e1b866 60%, #bd5532 70%, #373b44 95%, rgba(0, 0, 0, 0) 100%);
 }
-/* line 87, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 93, ../sass/screen.sass */
 hr:hover {
   width: 80%;
 }
 
-/* line 90, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 96, ../sass/screen.sass */
 pre > code {
   line-height: 1;
   font-family: "Consolas", "Ubuntu Mono", monospace;
@@ -1808,7 +1808,7 @@ pre > code {
   margin-bottom: 1.5rem;
 }
 
-/* line 99, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 105, ../sass/screen.sass */
 .lime {
   background-image: url("/static/images/lime.png");
   width: 33px;
@@ -1817,7 +1817,7 @@ pre > code {
   margin: 0 auto;
 }
 @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-  /* line 99, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+  /* line 105, ../sass/screen.sass */
   .lime {
     /* on retina, use image that's scaled by 2 */
     background-image: url("/static/images/lime@2X.png");
@@ -1825,22 +1825,22 @@ pre > code {
   }
 }
 
-/* line 107, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 113, ../sass/screen.sass */
 #main > header {
   clear: both;
   vertical-align: baseline;
 }
-/* line 110, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 116, ../sass/screen.sass */
 #main > header > a {
   float: left;
   color: #373b44;
   background-color: transparent;
 }
-/* line 114, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 120, ../sass/screen.sass */
 #main > header > a:hover, #main > header > a:hover:visited {
   background-color: transparent;
 }
-/* line 116, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 122, ../sass/screen.sass */
 #main > header nav {
   float: right;
   margin-right: 0;
@@ -1851,12 +1851,12 @@ pre > code {
   line-height: 0;
 }
 @media (min-width: 37em) {
-  /* line 116, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+  /* line 122, ../sass/screen.sass */
   #main > header nav {
     color: inherit;
   }
 }
-/* line 123, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 129, ../sass/screen.sass */
 #main > header nav > a {
   font-style: italic;
   padding-left: 0.5rem;
@@ -1865,19 +1865,19 @@ pre > code {
   line-height: 1.5rem;
 }
 @media (min-width: 37em) {
-  /* line 123, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+  /* line 129, ../sass/screen.sass */
   #main > header nav > a {
     display: inline;
   }
 }
-/* line 132, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 138, ../sass/screen.sass */
 #main footer {
   font-size: 0.875rem;
   margin-bottom: 1rem;
   color: #656c7c;
 }
 
-/* line 138, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 144, ../sass/screen.sass */
 article.photo {
   float: none;
   width: auto;
@@ -1894,38 +1894,38 @@ article.photo {
   -o-background-size: contain;
   background-size: contain;
 }
-/* line 151, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 157, ../sass/screen.sass */
 article.photo > img {
   width: 100%;
   height: 100%;
 }
-/* line 154, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 160, ../sass/screen.sass */
 article > header {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 156, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 162, ../sass/screen.sass */
 article > header > h1.title {
   float: left;
 }
-/* line 158, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 164, ../sass/screen.sass */
 article > header > time.pubdate {
   color: #c4c8cf;
   float: right;
 }
 
-/* line 163, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 169, ../sass/screen.sass */
 li.index {
   list-style: none;
   clear: both;
 }
 @media (min-width: 37em) {
-  /* line 163, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+  /* line 169, ../sass/screen.sass */
   li.index {
     list-style: lower-greek;
   }
 }
-/* line 168, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 174, ../sass/screen.sass */
 li.index time.pubdate {
   float: right;
   margin-right: 0;
@@ -1933,38 +1933,38 @@ li.index time.pubdate {
   display: inline;
 }
 
-/* line 172, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 178, ../sass/screen.sass */
 li {
   list-style: circle;
 }
 
-/* line 175, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 181, ../sass/screen.sass */
 li ul > li {
   list-style: square;
   margin-left: 1rem;
 }
 
-/* line 179, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 185, ../sass/screen.sass */
 p + ul {
   margin-bottom: 0.5rem;
 }
 
-/* line 183, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 189, ../sass/screen.sass */
 article > header {
   display: block;
 }
-/* line 186, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 192, ../sass/screen.sass */
 article > header > h1::after {
   content: " →";
 }
 
-/* line 189, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 195, ../sass/screen.sass */
 .intro {
   padding: 1rem 0 1rem 0;
   overflow: visible;
   clear: both;
 }
-/* line 193, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 199, ../sass/screen.sass */
 .intro .avatar {
   width: 100%;
   float: left;
@@ -1972,14 +1972,14 @@ article > header > h1::after {
   display: inline;
 }
 @media (min-width: 37em) {
-  /* line 193, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+  /* line 199, ../sass/screen.sass */
   .intro .avatar {
     width: 48.57143%;
     float: left;
     margin-right: 2.85714%;
   }
 }
-/* line 197, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 203, ../sass/screen.sass */
 .intro .avatar img {
   width: 100%;
   border-radius: 50%;
@@ -1988,12 +1988,12 @@ article > header > h1::after {
   -moz-box-shadow: 2px 2px 12px 5px #c7c7c9;
 }
 @media (min-width: 37em) {
-  /* line 197, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+  /* line 203, ../sass/screen.sass */
   .intro .avatar img {
     width: 250px;
   }
 }
-/* line 205, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 211, ../sass/screen.sass */
 .intro h1.title {
   width: 100%;
   float: left;
@@ -2001,7 +2001,7 @@ article > header > h1::after {
   display: inline;
 }
 @media (min-width: 37em) {
-  /* line 205, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+  /* line 211, ../sass/screen.sass */
   .intro h1.title {
     width: 48.57143%;
     float: left;
@@ -2010,12 +2010,12 @@ article > header > h1::after {
     margin-right: 0;
   }
 }
-/* line 210, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 216, ../sass/screen.sass */
 .intro .bio {
   clear: both;
 }
 
-/* line 214, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 220, ../sass/screen.sass */
 .milestones .milestone {
   margin-bottom: 2rem;
   border-radius: 15px;
@@ -2024,56 +2024,56 @@ article > header > h1::after {
   border-width: 2px;
   padding: 5px;
 }
-/* line 217, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 223, ../sass/screen.sass */
 .milestones .milestone a h3:hover {
   color: #bd5532;
 }
-/* line 225, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 231, ../sass/screen.sass */
 .milestones .milestone .wrap {
   overflow: hidden;
   *zoom: 1;
 }
 @media (min-width: 37em) {
-  /* line 225, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+  /* line 231, ../sass/screen.sass */
   .milestones .milestone .wrap {
     display: table;
   }
-  /* line 228, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+  /* line 234, ../sass/screen.sass */
   .milestones .milestone .wrap .markdown {
     display: table-cell;
     vertical-align: middle;
   }
 }
-/* line 233, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 239, ../sass/screen.sass */
 .milestones .milestone .wrap img {
   border-radius: 15px;
   float: left;
   margin: 1rem;
   max-width: none;
 }
-/* line 238, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 244, ../sass/screen.sass */
 .milestones h1, .milestones h2, .milestones h3, .milestones h4, .milestones h5 {
   margin-bottom: 0.25rem;
   color: #4e5360;
   line-height: 100%;
 }
-/* line 242, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 248, ../sass/screen.sass */
 .milestones h1 a, .milestones h2 a, .milestones h3 a, .milestones h4 a, .milestones h5 a {
   font-size: 1rem;
 }
-/* line 244, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 250, ../sass/screen.sass */
 .milestones .subtitle {
   color: #7e8596;
   text-align: right;
 }
-/* line 247, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 253, ../sass/screen.sass */
 .milestones p.status {
   text-align: right;
   font-variant-caps: all-small-caps;
   font-size: 0.25em;
 }
 
-/* line 252, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 258, ../sass/screen.sass */
 blockquote {
   border-left: 4px solid #ddd;
   padding-left: 11px;
@@ -2081,39 +2081,39 @@ blockquote {
   margin: 14px 0;
 }
 
-/* line 258, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 264, ../sass/screen.sass */
 p {
   margin: 0 0 1rem;
 }
 
-/* line 261, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 267, ../sass/screen.sass */
 strong {
   font-weight: bold;
 }
 
-/* line 264, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 270, ../sass/screen.sass */
 img, object, video {
   max-width: 100%;
 }
 
-/* line 268, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 274, ../sass/screen.sass */
 article.flatpage img {
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
-/* line 272, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 278, ../sass/screen.sass */
 article.flatpage iframe.youtube {
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
 
-/* line 277, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 283, ../sass/screen.sass */
 .cv .row .row-item {
   display: inline-block;
 }
-/* line 279, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 285, ../sass/screen.sass */
 .cv .row .row-item:last-child {
   text-align: right;
   float: right;
@@ -2121,7 +2121,7 @@ article.flatpage iframe.youtube {
   *zoom: 1;
 }
 
-/* line 284, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 290, ../sass/screen.sass */
 table {
   text-shadow: 1px 1px 0px #fff;
   width: 100%;
@@ -2135,7 +2135,7 @@ table {
   -webkit-box-shadow: 0 1px 2px #d1d1d1;
   box-shadow: 0 1px 2px #d1d1d1;
 }
-/* line 296, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 302, ../sass/screen.sass */
 table th {
   padding: 21px 25px 22px 25px;
   border-top: 1px solid #fafafa;
@@ -2144,29 +2144,29 @@ table th {
   background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
   background: -moz-linear-gradient(top, #ededed, #ebebeb);
 }
-/* line 303, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 309, ../sass/screen.sass */
 table th:first-child {
   text-align: left;
   padding-left: 20px;
 }
-/* line 306, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 312, ../sass/screen.sass */
 table tr {
   text-align: center;
   padding-left: 20px;
 }
-/* line 308, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 314, ../sass/screen.sass */
 table tr:first-child th:first-child {
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
   border-top-left-radius: 3px;
 }
-/* line 312, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 318, ../sass/screen.sass */
 table tr:first-child th:last-child {
   -moz-border-radius-topright: 3px;
   -webkit-border-top-right-radius: 3px;
   border-top-right-radius: 3px;
 }
-/* line 318, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 324, ../sass/screen.sass */
 table td {
   padding: 1rem;
   border-top: 1px solid #ffffff;
@@ -2176,48 +2176,48 @@ table td {
   background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
   background: -moz-linear-gradient(top, #fbfbfb, #fafafa);
 }
-/* line 319, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 325, ../sass/screen.sass */
 table td:first-child {
   text-align: left;
   padding-left: 20px;
   border-left: 0;
 }
-/* line 331, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 337, ../sass/screen.sass */
 table tr.even td {
   background: #f6f6f6;
   background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
   background: -moz-linear-gradient(top, #f8f8f8, #f6f6f6);
 }
-/* line 335, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 341, ../sass/screen.sass */
 table tr:last-child td {
   border-bottom: 0;
 }
-/* line 337, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 343, ../sass/screen.sass */
 table tr:last-child td:first-child {
   -moz-border-radius-bottomleft: 3px;
   -webkit-border-bottom-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
-/* line 341, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 347, ../sass/screen.sass */
 table tr:last-child td:last-child {
   -moz-border-radius-bottomright: 3px;
   -webkit-border-bottom-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-/* line 345, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 351, ../sass/screen.sass */
 table tr:hover td {
   background: #f2f2f2;
   background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
   background: -moz-linear-gradient(top, #f2f2f2, #f0f0f0);
 }
 
-/* line 350, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 356, ../sass/screen.sass */
 #photo_index {
   text-align: center;
   display: table;
 }
 
-/* line 354, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+/* line 360, ../sass/screen.sass */
 figure.photo_index {
   display: table-cell;
   width: 100%;
@@ -2226,13 +2226,13 @@ figure.photo_index {
   display: inline;
 }
 @media (min-width: 37em) {
-  /* line 354, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+  /* line 360, ../sass/screen.sass */
   figure.photo_index {
     width: 22.85714%;
     float: left;
     margin-right: 2.85714%;
   }
-  /* line 359, /home/ravikotecha/code/whitespace/static/sass/screen.sass */
+  /* line 365, ../sass/screen.sass */
   figure.photo_index:nth-child(4n) {
     float: right;
     margin-right: 0;

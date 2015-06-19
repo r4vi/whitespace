@@ -1,3 +1,3 @@
 dev: python sitebuilder.py
 livereload: livereload
-compass: bundle exec compass watch --app-dir static/
+compass: bundle exec compass watch --app-dir static/ -c static/config.rb

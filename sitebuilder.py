@@ -217,7 +217,7 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         if sys.argv[1] == "build":
             import subprocess
-            subprocess.call("bundle exec compass compile --app-dir static/ --force", shell=True)
+            subprocess.call("bundle exec compass compile --app-dir static/ -c static/config.rb --force", shell=True)
             DEBUG = False
             freezer.freeze()
         else:

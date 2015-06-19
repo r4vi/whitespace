@@ -8,6 +8,7 @@
 @import "compass/utilities"
 @import "compass/typography/vertical_rhythm"
 @import "compass/utilities/general/float"
+@import "sassy-buttons"
 @import "image2x"
 /*config*/
 $cyan-clouds: rgb(115,200,169)
@@ -20,7 +21,12 @@ $spooky: ghostwhite
 $ie: false
 
 
+@mixin pill
+  +sassy-button("flat", 15px, 0.5rem, $low-light, $morning-light, $auto-states: false)
+  cursor: default
+
 @mixin status($fg,$bg)
+  +sassy-button("flat", 15px, 0.5rem, $bg, $fg, $auto-states: false)
   cursor: default
 
 /* -------------------------------------------------------------------------*/
