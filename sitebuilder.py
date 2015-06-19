@@ -12,7 +12,7 @@ import flickr
 import markdown2
 from flask_frozen import Freezer
 from jinja2.exceptions import TemplateNotFound
-from flaskext.compass import Compass
+# from flaskext.compass import Compass
 import flask_assets
 from settings import FLICKR_API_KEY, FLICKR_API_SECRET
 from webassets import Bundle
@@ -27,7 +27,7 @@ if len(sys.argv) > 1:
 FLATPAGES_AUTO_RELOAD = DEBUG
 FLATPAGES_EXTENSION = '.md'
 FLATPAGES_ROOT = './content/'
-FLATPAGES_HTML_RENDERER = lambda x: markdown2.markdown(x, 
+FLATPAGES_HTML_RENDERER = lambda x: markdown2.markdown(x,
         extras=[
             "fenced-code-blocks",
             "header-ids",
@@ -35,7 +35,7 @@ FLATPAGES_HTML_RENDERER = lambda x: markdown2.markdown(x,
             "wiki-tables",
             "smarty-pants"
             "toc",
-            "footnotes", 
+            "footnotes",
             ])
 SITE_NAME = 'Ravi - Pickled Lime'
 SITE_ROOT = 'http://ravi.pckl.me'
@@ -58,7 +58,7 @@ app.jinja_env.add_extension('webassets.ext.jinja2.AssetsExtension')
 app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
 pages = FlatPages(app)
 freezer = Freezer(app)
-compass = Compass(app)
+#compass = Compass(app)
 
 common_js = Bundle('js/modernizr.custom.59903.js', 'js/jquery-1.9.1.min.js', output='js/gen/common.js', filters='rjsmin')
 photo_js = Bundle('coffeescript/imagebg.coffee', output='js/gen/imagebg.js', filters='coffeescript,rjsmin')
@@ -110,7 +110,7 @@ def recent_feed():
                     feed_url=urljoin(SITE_ROOT, 'feed.atom'),
                     url=SITE_ROOT)
     posts = MODELS.get('all')[:25]
-    
+
     for post in posts:
         feed.add(post.meta.get('title', 'untitled'),
                  post.html,
@@ -188,16 +188,16 @@ def page(path):
 def favicon():
     return send_from_directory(
       os.path.join(
-        app.root_path, 'static', 'images'), 
-      'favicon.ico', 
-      mimetype='image/vnd.microsoft.icon') 
+        app.root_path, 'static', 'images'),
+      'favicon.ico',
+      mimetype='image/vnd.microsoft.icon')
 
 @app.route('/robots.txt')
 def robots():
     return send_from_directory(
       os.path.join(
-        app.root_path, 'static'), 
-      'robots.txt', 
+        app.root_path, 'static'),
+      'robots.txt',
       mimetype='text/plain')
 
 @app.route('/keybase.txt')
@@ -216,6 +216,8 @@ def page():
 if __name__ == "__main__":
     if len(sys.argv) > 1:
         if sys.argv[1] == "build":
+            import subprocess
+            subprocess.call("bundle exec compass compile --app-dir static/ --force", shell=True)
             DEBUG = False
             freezer.freeze()
         else:
