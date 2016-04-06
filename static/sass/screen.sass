@@ -84,14 +84,11 @@ a
     color: darken($soft-orange, 35%)
 hr
   clear: both
-  @if $ie
-    border: 1px $low-light
-  @else
-    border: 0
-    height: 2px
-    +background-image(linear-gradient(left, transparent 2%, $cyan-clouds 40%, $morning-light 50%, $soft-orange 60%, $orange-clouds 70%, $low-light 95%, transparent 100%))
-  &:hover
-    width: 80%
+  border: 0
+  height: 2px
+  background-color: $low-light
+  /*   +background-image(linear-gradient(left, transparent 2%, $cyan-clouds 40%, $morning-light 50%, $soft-orange 60%, $orange-clouds 70%, $low-light 95%, transparent 100%))
+  width: 95%
 
 pre > code
   line-height: 1

@@ -4,7 +4,8 @@
  * <!--[if IE]>
  *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
  * <![endif]--> */
-/*  Font Awesome 3.0.2
+/*!
+ *  Font Awesome 3.0.2
  *  the iconic font designed for use with Twitter Bootstrap
  *  -------------------------------------------------------
  *  The full suite of pictographic icons, examples, and documentation
@@ -32,10 +33,9 @@
   font-weight: normal;
   font-style: normal;
 }
-
 /*  Font Awesome styles
  *  ------------------------------------------------------- */
-/* line 44, ../sass/font-awesome.sass */
+/* line 44, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 [class^="icon-"],
 [class*=" icon-"] {
   font-family: FontAwesome;
@@ -56,7 +56,7 @@
 }
 
 /* more sprites.less reset */
-/* line 64, ../sass/font-awesome.sass */
+/* line 64, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-white,
 .nav-pills > .active > a > [class^="icon-"],
 .nav-pills > .active > a > [class*=" icon-"],
@@ -73,7 +73,7 @@
   background-image: none;
 }
 
-/* line 79, ../sass/font-awesome.sass */
+/* line 79, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   text-decoration: inherit;
@@ -82,54 +82,54 @@
 }
 
 /* makes sure icons active on rollover in links */
-/* line 87, ../sass/font-awesome.sass */
+/* line 87, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 a [class^="icon-"],
 a [class*=" icon-"] {
   display: inline-block;
 }
 
 /* makes the font 33% larger relative to the icon container */
-/* line 92, ../sass/font-awesome.sass */
+/* line 92, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-large:before {
   vertical-align: -10%;
   font-size: 1.33333em;
 }
 
-/* line 97, ../sass/font-awesome.sass */
+/* line 97, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .btn [class^="icon-"],
 .btn [class*=" icon-"], .nav [class^="icon-"],
 .nav [class*=" icon-"] {
   display: inline;
   /* keeps button heights with and without icons the same */
 }
-/* line 101, ../sass/font-awesome.sass */
+/* line 101, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .btn [class^="icon-"].icon-large,
 .btn [class*=" icon-"].icon-large, .nav [class^="icon-"].icon-large,
 .nav [class*=" icon-"].icon-large {
   line-height: 0.9em;
 }
-/* line 103, ../sass/font-awesome.sass */
+/* line 103, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .btn [class^="icon-"].icon-spin,
 .btn [class*=" icon-"].icon-spin, .nav [class^="icon-"].icon-spin,
 .nav [class*=" icon-"].icon-spin {
   display: inline-block;
 }
 
-/* line 107, ../sass/font-awesome.sass */
+/* line 107, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .nav-tabs [class^="icon-"],
 .nav-tabs [class*=" icon-"], .nav-pills [class^="icon-"],
 .nav-pills [class*=" icon-"] {
   /* keeps button heights with and without icons the same */
   line-height: 0.9em;
 }
-/* line 111, ../sass/font-awesome.sass */
+/* line 111, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .nav-tabs [class^="icon-"].icon-large,
 .nav-tabs [class*=" icon-"].icon-large, .nav-pills [class^="icon-"].icon-large,
 .nav-pills [class*=" icon-"].icon-large {
   line-height: 0.9em;
 }
 
-/* line 115, ../sass/font-awesome.sass */
+/* line 115, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 li [class^="icon-"],
 li [class*=" icon-"], .nav li [class^="icon-"],
 .nav li [class*=" icon-"] {
@@ -137,7 +137,7 @@ li [class*=" icon-"], .nav li [class^="icon-"],
   width: 1.25em;
   text-align: center;
 }
-/* line 120, ../sass/font-awesome.sass */
+/* line 120, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 li [class^="icon-"].icon-large,
 li [class*=" icon-"].icon-large, .nav li [class^="icon-"].icon-large,
 .nav li [class*=" icon-"].icon-large {
@@ -145,36 +145,36 @@ li [class*=" icon-"].icon-large, .nav li [class^="icon-"].icon-large,
   width: 1.5625em;
 }
 
-/* line 124, ../sass/font-awesome.sass */
+/* line 124, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 ul.icons {
   list-style-type: none;
   text-indent: -0.75em;
 }
-/* line 128, ../sass/font-awesome.sass */
+/* line 128, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 ul.icons li [class^="icon-"],
 ul.icons li [class*=" icon-"] {
   width: 0.75em;
 }
 
-/* line 132, ../sass/font-awesome.sass */
+/* line 132, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-muted {
-  color: #eeeeee;
+  color: #eee;
 }
 
-/* line 138, ../sass/font-awesome.sass */
+/* line 138, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-border {
-  border: solid 1px #eeeeee;
+  border: solid 1px #eee;
   padding: 0.2em 0.25em 0.15em;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
 
-/* line 146, ../sass/font-awesome.sass */
+/* line 146, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-2x {
   font-size: 2em;
 }
-/* line 148, ../sass/font-awesome.sass */
+/* line 148, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-2x.icon-border {
   border-width: 2px;
   -webkit-border-radius: 4px;
@@ -182,11 +182,11 @@ ul.icons li [class*=" icon-"] {
   border-radius: 4px;
 }
 
-/* line 152, ../sass/font-awesome.sass */
+/* line 152, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-3x {
   font-size: 3em;
 }
-/* line 154, ../sass/font-awesome.sass */
+/* line 154, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-3x.icon-border {
   border-width: 3px;
   -webkit-border-radius: 5px;
@@ -194,11 +194,11 @@ ul.icons li [class*=" icon-"] {
   border-radius: 5px;
 }
 
-/* line 158, ../sass/font-awesome.sass */
+/* line 158, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-4x {
   font-size: 4em;
 }
-/* line 160, ../sass/font-awesome.sass */
+/* line 160, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-4x.icon-border {
   border-width: 4px;
   -webkit-border-radius: 6px;
@@ -206,69 +206,69 @@ ul.icons li [class*=" icon-"] {
   border-radius: 6px;
 }
 
-/* line 168, ../sass/font-awesome.sass */
+/* line 168, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .pull-right {
   float: right;
 }
 
-/* line 170, ../sass/font-awesome.sass */
+/* line 170, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .pull-left {
   float: left;
 }
 
-/* line 175, ../sass/font-awesome.sass */
+/* line 175, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 [class^="icon-"].pull-left,
 [class*=" icon-"].pull-left {
   margin-right: 0.3em;
 }
-/* line 177, ../sass/font-awesome.sass */
+/* line 177, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 [class^="icon-"].pull-right,
 [class*=" icon-"].pull-right {
   margin-left: 0.3em;
 }
 
-/* line 184, ../sass/font-awesome.sass */
+/* line 184, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .btn [class^="icon-"].pull-left.icon-2x, .btn [class^="icon-"].pull-right.icon-2x,
 .btn [class*=" icon-"].pull-left.icon-2x,
 .btn [class*=" icon-"].pull-right.icon-2x {
   margin-top: 0.18em;
 }
-/* line 186, ../sass/font-awesome.sass */
+/* line 186, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .btn [class^="icon-"].icon-spin.icon-large,
 .btn [class*=" icon-"].icon-spin.icon-large {
   line-height: 0.8em;
 }
 
-/* line 193, ../sass/font-awesome.sass */
+/* line 193, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .btn.btn-small [class^="icon-"].pull-left.icon-2x, .btn.btn-small [class^="icon-"].pull-right.icon-2x,
 .btn.btn-small [class*=" icon-"].pull-left.icon-2x,
 .btn.btn-small [class*=" icon-"].pull-right.icon-2x {
   margin-top: 0.25em;
 }
 
-/* line 197, ../sass/font-awesome.sass */
+/* line 197, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .btn.btn-large [class^="icon-"],
 .btn.btn-large [class*=" icon-"] {
   margin-top: 0;
 }
-/* line 201, ../sass/font-awesome.sass */
+/* line 201, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .btn.btn-large [class^="icon-"].pull-left.icon-2x, .btn.btn-large [class^="icon-"].pull-right.icon-2x,
 .btn.btn-large [class*=" icon-"].pull-left.icon-2x,
 .btn.btn-large [class*=" icon-"].pull-right.icon-2x {
   margin-top: 0.05em;
 }
-/* line 203, ../sass/font-awesome.sass */
+/* line 203, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .btn.btn-large [class^="icon-"].pull-left.icon-2x,
 .btn.btn-large [class*=" icon-"].pull-left.icon-2x {
   margin-right: 0.2em;
 }
-/* line 205, ../sass/font-awesome.sass */
+/* line 205, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .btn.btn-large [class^="icon-"].pull-right.icon-2x,
 .btn.btn-large [class*=" icon-"].pull-right.icon-2x {
   margin-left: 0.2em;
 }
 
-/* line 209, ../sass/font-awesome.sass */
+/* line 209, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-spin {
   display: inline-block;
   -moz-animation: spin 2s infinite linear;
@@ -278,1336 +278,1315 @@ ul.icons li [class*=" icon-"] {
 }
 
 @-moz-keyframes spin {
-  /* line 217, ../sass/font-awesome.sass */
   0% {
     -moz-transform: rotate(0deg);
   }
-
-  /* line 219, ../sass/font-awesome.sass */
   100% {
     -moz-transform: rotate(359deg);
   }
 }
-
 @-webkit-keyframes spin {
-  /* line 223, ../sass/font-awesome.sass */
   0% {
     -webkit-transform: rotate(0deg);
   }
-
-  /* line 225, ../sass/font-awesome.sass */
   100% {
     -webkit-transform: rotate(359deg);
   }
 }
-
 @-o-keyframes spin {
-  /* line 229, ../sass/font-awesome.sass */
   0% {
     -o-transform: rotate(0deg);
   }
-
-  /* line 231, ../sass/font-awesome.sass */
   100% {
     -o-transform: rotate(359deg);
   }
 }
-
 @-ms-keyframes spin {
-  /* line 235, ../sass/font-awesome.sass */
   0% {
     -ms-transform: rotate(0deg);
   }
-
-  /* line 237, ../sass/font-awesome.sass */
   100% {
     -ms-transform: rotate(359deg);
   }
 }
-
 @keyframes spin {
-  /* line 241, ../sass/font-awesome.sass */
   0% {
     transform: rotate(0deg);
   }
-
-  /* line 243, ../sass/font-awesome.sass */
   100% {
     transform: rotate(359deg);
   }
 }
-
 @-moz-document url-prefix() {
-  /* line 247, ../sass/font-awesome.sass */
+  /* line 247, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
   .icon-spin {
     height: 0.9em;
   }
 
-  /* line 249, ../sass/font-awesome.sass */
+  /* line 249, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
   .btn .icon-spin {
     height: auto;
   }
 
-  /* line 251, ../sass/font-awesome.sass */
+  /* line 251, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
   .icon-spin.icon-large {
     height: 1.25em;
   }
 
-  /* line 253, ../sass/font-awesome.sass */
+  /* line 253, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
   .btn .icon-spin.icon-large {
     height: 0.75em;
   }
 }
-
 /*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
  *  readers do not read off random characters that represent icons */
-/* line 260, ../sass/font-awesome.sass */
+/* line 260, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-glass:before {
-  content: "\f000";
+  content: "";
 }
 
-/* line 262, ../sass/font-awesome.sass */
+/* line 262, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-music:before {
-  content: "\f001";
+  content: "";
 }
 
-/* line 264, ../sass/font-awesome.sass */
+/* line 264, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-search:before {
-  content: "\f002";
+  content: "";
 }
 
-/* line 266, ../sass/font-awesome.sass */
+/* line 266, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-envelope:before {
-  content: "\f003";
+  content: "";
 }
 
-/* line 268, ../sass/font-awesome.sass */
+/* line 268, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-heart:before {
-  content: "\f004";
+  content: "";
 }
 
-/* line 270, ../sass/font-awesome.sass */
+/* line 270, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-star:before {
-  content: "\f005";
+  content: "";
 }
 
-/* line 272, ../sass/font-awesome.sass */
+/* line 272, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-star-empty:before {
-  content: "\f006";
+  content: "";
 }
 
-/* line 274, ../sass/font-awesome.sass */
+/* line 274, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-user:before {
-  content: "\f007";
+  content: "";
 }
 
-/* line 276, ../sass/font-awesome.sass */
+/* line 276, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-film:before {
-  content: "\f008";
+  content: "";
 }
 
-/* line 278, ../sass/font-awesome.sass */
+/* line 278, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-th-large:before {
-  content: "\f009";
+  content: "";
 }
 
-/* line 280, ../sass/font-awesome.sass */
+/* line 280, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-th:before {
-  content: "\f00a";
+  content: "";
 }
 
-/* line 282, ../sass/font-awesome.sass */
+/* line 282, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-th-list:before {
-  content: "\f00b";
+  content: "";
 }
 
-/* line 284, ../sass/font-awesome.sass */
+/* line 284, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-ok:before {
-  content: "\f00c";
+  content: "";
 }
 
-/* line 286, ../sass/font-awesome.sass */
+/* line 286, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-remove:before {
-  content: "\f00d";
+  content: "";
 }
 
-/* line 288, ../sass/font-awesome.sass */
+/* line 288, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-zoom-in:before {
-  content: "\f00e";
+  content: "";
 }
 
-/* line 290, ../sass/font-awesome.sass */
+/* line 290, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-zoom-out:before {
-  content: "\f010";
+  content: "";
 }
 
-/* line 292, ../sass/font-awesome.sass */
+/* line 292, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-off:before {
-  content: "\f011";
+  content: "";
 }
 
-/* line 294, ../sass/font-awesome.sass */
+/* line 294, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-signal:before {
-  content: "\f012";
+  content: "";
 }
 
-/* line 296, ../sass/font-awesome.sass */
+/* line 296, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-cog:before {
-  content: "\f013";
+  content: "";
 }
 
-/* line 298, ../sass/font-awesome.sass */
+/* line 298, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-trash:before {
-  content: "\f014";
+  content: "";
 }
 
-/* line 300, ../sass/font-awesome.sass */
+/* line 300, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-home:before {
-  content: "\f015";
+  content: "";
 }
 
-/* line 302, ../sass/font-awesome.sass */
+/* line 302, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-file:before {
-  content: "\f016";
+  content: "";
 }
 
-/* line 304, ../sass/font-awesome.sass */
+/* line 304, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-time:before {
-  content: "\f017";
+  content: "";
 }
 
-/* line 306, ../sass/font-awesome.sass */
+/* line 306, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-road:before {
-  content: "\f018";
+  content: "";
 }
 
-/* line 308, ../sass/font-awesome.sass */
+/* line 308, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-download-alt:before {
-  content: "\f019";
+  content: "";
 }
 
-/* line 310, ../sass/font-awesome.sass */
+/* line 310, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-download:before {
-  content: "\f01a";
+  content: "";
 }
 
-/* line 312, ../sass/font-awesome.sass */
+/* line 312, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-upload:before {
-  content: "\f01b";
+  content: "";
 }
 
-/* line 314, ../sass/font-awesome.sass */
+/* line 314, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-inbox:before {
-  content: "\f01c";
+  content: "";
 }
 
-/* line 316, ../sass/font-awesome.sass */
+/* line 316, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-play-circle:before {
-  content: "\f01d";
+  content: "";
 }
 
-/* line 318, ../sass/font-awesome.sass */
+/* line 318, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-repeat:before {
-  content: "\f01e";
+  content: "";
 }
 
 /* \f020 doesn't work in Safari. all shifted one down */
-/* line 321, ../sass/font-awesome.sass */
+/* line 321, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-refresh:before {
-  content: "\f021";
+  content: "";
 }
 
-/* line 323, ../sass/font-awesome.sass */
+/* line 323, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-list-alt:before {
-  content: "\f022";
+  content: "";
 }
 
-/* line 325, ../sass/font-awesome.sass */
+/* line 325, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-lock:before {
-  content: "\f023";
+  content: "";
 }
 
-/* line 327, ../sass/font-awesome.sass */
+/* line 327, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-flag:before {
-  content: "\f024";
+  content: "";
 }
 
-/* line 329, ../sass/font-awesome.sass */
+/* line 329, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-headphones:before {
-  content: "\f025";
+  content: "";
 }
 
-/* line 331, ../sass/font-awesome.sass */
+/* line 331, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-volume-off:before {
-  content: "\f026";
+  content: "";
 }
 
-/* line 333, ../sass/font-awesome.sass */
+/* line 333, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-volume-down:before {
-  content: "\f027";
+  content: "";
 }
 
-/* line 335, ../sass/font-awesome.sass */
+/* line 335, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-volume-up:before {
-  content: "\f028";
+  content: "";
 }
 
-/* line 337, ../sass/font-awesome.sass */
+/* line 337, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-qrcode:before {
-  content: "\f029";
+  content: "";
 }
 
-/* line 339, ../sass/font-awesome.sass */
+/* line 339, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-barcode:before {
-  content: "\f02a";
+  content: "";
 }
 
-/* line 341, ../sass/font-awesome.sass */
+/* line 341, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-tag:before {
-  content: "\f02b";
+  content: "";
 }
 
-/* line 343, ../sass/font-awesome.sass */
+/* line 343, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-tags:before {
-  content: "\f02c";
+  content: "";
 }
 
-/* line 345, ../sass/font-awesome.sass */
+/* line 345, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-book:before {
-  content: "\f02d";
+  content: "";
 }
 
-/* line 347, ../sass/font-awesome.sass */
+/* line 347, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-bookmark:before {
-  content: "\f02e";
+  content: "";
 }
 
-/* line 349, ../sass/font-awesome.sass */
+/* line 349, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-print:before {
-  content: "\f02f";
+  content: "";
 }
 
-/* line 351, ../sass/font-awesome.sass */
+/* line 351, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-camera:before {
-  content: "\f030";
+  content: "";
 }
 
-/* line 353, ../sass/font-awesome.sass */
+/* line 353, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-font:before {
-  content: "\f031";
+  content: "";
 }
 
-/* line 355, ../sass/font-awesome.sass */
+/* line 355, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-bold:before {
-  content: "\f032";
+  content: "";
 }
 
-/* line 357, ../sass/font-awesome.sass */
+/* line 357, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-italic:before {
-  content: "\f033";
+  content: "";
 }
 
-/* line 359, ../sass/font-awesome.sass */
+/* line 359, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-text-height:before {
-  content: "\f034";
+  content: "";
 }
 
-/* line 361, ../sass/font-awesome.sass */
+/* line 361, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-text-width:before {
-  content: "\f035";
+  content: "";
 }
 
-/* line 363, ../sass/font-awesome.sass */
+/* line 363, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-align-left:before {
-  content: "\f036";
+  content: "";
 }
 
-/* line 365, ../sass/font-awesome.sass */
+/* line 365, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-align-center:before {
-  content: "\f037";
+  content: "";
 }
 
-/* line 367, ../sass/font-awesome.sass */
+/* line 367, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-align-right:before {
-  content: "\f038";
+  content: "";
 }
 
-/* line 369, ../sass/font-awesome.sass */
+/* line 369, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-align-justify:before {
-  content: "\f039";
+  content: "";
 }
 
-/* line 371, ../sass/font-awesome.sass */
+/* line 371, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-list:before {
-  content: "\f03a";
+  content: "";
 }
 
-/* line 373, ../sass/font-awesome.sass */
+/* line 373, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-indent-left:before {
-  content: "\f03b";
+  content: "";
 }
 
-/* line 375, ../sass/font-awesome.sass */
+/* line 375, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-indent-right:before {
-  content: "\f03c";
+  content: "";
 }
 
-/* line 377, ../sass/font-awesome.sass */
+/* line 377, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-facetime-video:before {
-  content: "\f03d";
+  content: "";
 }
 
-/* line 379, ../sass/font-awesome.sass */
+/* line 379, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-picture:before {
-  content: "\f03e";
+  content: "";
 }
 
-/* line 381, ../sass/font-awesome.sass */
+/* line 381, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-pencil:before {
-  content: "\f040";
+  content: "";
 }
 
-/* line 383, ../sass/font-awesome.sass */
+/* line 383, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-map-marker:before {
-  content: "\f041";
+  content: "";
 }
 
-/* line 385, ../sass/font-awesome.sass */
+/* line 385, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-adjust:before {
-  content: "\f042";
+  content: "";
 }
 
-/* line 387, ../sass/font-awesome.sass */
+/* line 387, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-tint:before {
-  content: "\f043";
+  content: "";
 }
 
-/* line 389, ../sass/font-awesome.sass */
+/* line 389, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-edit:before {
-  content: "\f044";
+  content: "";
 }
 
-/* line 391, ../sass/font-awesome.sass */
+/* line 391, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-share:before {
-  content: "\f045";
+  content: "";
 }
 
-/* line 393, ../sass/font-awesome.sass */
+/* line 393, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-check:before {
-  content: "\f046";
+  content: "";
 }
 
-/* line 395, ../sass/font-awesome.sass */
+/* line 395, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-move:before {
-  content: "\f047";
+  content: "";
 }
 
-/* line 397, ../sass/font-awesome.sass */
+/* line 397, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-step-backward:before {
-  content: "\f048";
+  content: "";
 }
 
-/* line 399, ../sass/font-awesome.sass */
+/* line 399, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-fast-backward:before {
-  content: "\f049";
+  content: "";
 }
 
-/* line 401, ../sass/font-awesome.sass */
+/* line 401, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-backward:before {
-  content: "\f04a";
+  content: "";
 }
 
-/* line 403, ../sass/font-awesome.sass */
+/* line 403, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-play:before {
-  content: "\f04b";
+  content: "";
 }
 
-/* line 405, ../sass/font-awesome.sass */
+/* line 405, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-pause:before {
-  content: "\f04c";
+  content: "";
 }
 
-/* line 407, ../sass/font-awesome.sass */
+/* line 407, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-stop:before {
-  content: "\f04d";
+  content: "";
 }
 
-/* line 409, ../sass/font-awesome.sass */
+/* line 409, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-forward:before {
-  content: "\f04e";
+  content: "";
 }
 
-/* line 411, ../sass/font-awesome.sass */
+/* line 411, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-fast-forward:before {
-  content: "\f050";
+  content: "";
 }
 
-/* line 413, ../sass/font-awesome.sass */
+/* line 413, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-step-forward:before {
-  content: "\f051";
+  content: "";
 }
 
-/* line 415, ../sass/font-awesome.sass */
+/* line 415, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-eject:before {
-  content: "\f052";
+  content: "";
 }
 
-/* line 417, ../sass/font-awesome.sass */
+/* line 417, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-chevron-left:before {
-  content: "\f053";
+  content: "";
 }
 
-/* line 419, ../sass/font-awesome.sass */
+/* line 419, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-chevron-right:before {
-  content: "\f054";
+  content: "";
 }
 
-/* line 421, ../sass/font-awesome.sass */
+/* line 421, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-plus-sign:before {
-  content: "\f055";
+  content: "";
 }
 
-/* line 423, ../sass/font-awesome.sass */
+/* line 423, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-minus-sign:before {
-  content: "\f056";
+  content: "";
 }
 
-/* line 425, ../sass/font-awesome.sass */
+/* line 425, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-remove-sign:before {
-  content: "\f057";
+  content: "";
 }
 
-/* line 427, ../sass/font-awesome.sass */
+/* line 427, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-ok-sign:before {
-  content: "\f058";
+  content: "";
 }
 
-/* line 429, ../sass/font-awesome.sass */
+/* line 429, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-question-sign:before {
-  content: "\f059";
+  content: "";
 }
 
-/* line 431, ../sass/font-awesome.sass */
+/* line 431, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-info-sign:before {
-  content: "\f05a";
+  content: "";
 }
 
-/* line 433, ../sass/font-awesome.sass */
+/* line 433, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-screenshot:before {
-  content: "\f05b";
+  content: "";
 }
 
-/* line 435, ../sass/font-awesome.sass */
+/* line 435, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-remove-circle:before {
-  content: "\f05c";
+  content: "";
 }
 
-/* line 437, ../sass/font-awesome.sass */
+/* line 437, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-ok-circle:before {
-  content: "\f05d";
+  content: "";
 }
 
-/* line 439, ../sass/font-awesome.sass */
+/* line 439, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-ban-circle:before {
-  content: "\f05e";
+  content: "";
 }
 
-/* line 441, ../sass/font-awesome.sass */
+/* line 441, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-arrow-left:before {
-  content: "\f060";
+  content: "";
 }
 
-/* line 443, ../sass/font-awesome.sass */
+/* line 443, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-arrow-right:before {
-  content: "\f061";
+  content: "";
 }
 
-/* line 445, ../sass/font-awesome.sass */
+/* line 445, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-arrow-up:before {
-  content: "\f062";
+  content: "";
 }
 
-/* line 447, ../sass/font-awesome.sass */
+/* line 447, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-arrow-down:before {
-  content: "\f063";
+  content: "";
 }
 
-/* line 449, ../sass/font-awesome.sass */
+/* line 449, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-share-alt:before {
-  content: "\f064";
+  content: "";
 }
 
-/* line 451, ../sass/font-awesome.sass */
+/* line 451, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-resize-full:before {
-  content: "\f065";
+  content: "";
 }
 
-/* line 453, ../sass/font-awesome.sass */
+/* line 453, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-resize-small:before {
-  content: "\f066";
+  content: "";
 }
 
-/* line 455, ../sass/font-awesome.sass */
+/* line 455, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-plus:before {
-  content: "\f067";
+  content: "";
 }
 
-/* line 457, ../sass/font-awesome.sass */
+/* line 457, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-minus:before {
-  content: "\f068";
+  content: "";
 }
 
-/* line 459, ../sass/font-awesome.sass */
+/* line 459, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-asterisk:before {
-  content: "\f069";
+  content: "";
 }
 
-/* line 461, ../sass/font-awesome.sass */
+/* line 461, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-exclamation-sign:before {
-  content: "\f06a";
+  content: "";
 }
 
-/* line 463, ../sass/font-awesome.sass */
+/* line 463, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-gift:before {
-  content: "\f06b";
+  content: "";
 }
 
-/* line 465, ../sass/font-awesome.sass */
+/* line 465, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-leaf:before {
-  content: "\f06c";
+  content: "";
 }
 
-/* line 467, ../sass/font-awesome.sass */
+/* line 467, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-fire:before {
-  content: "\f06d";
+  content: "";
 }
 
-/* line 469, ../sass/font-awesome.sass */
+/* line 469, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-eye-open:before {
-  content: "\f06e";
+  content: "";
 }
 
-/* line 471, ../sass/font-awesome.sass */
+/* line 471, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-eye-close:before {
-  content: "\f070";
+  content: "";
 }
 
-/* line 473, ../sass/font-awesome.sass */
+/* line 473, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-warning-sign:before {
-  content: "\f071";
+  content: "";
 }
 
-/* line 475, ../sass/font-awesome.sass */
+/* line 475, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-plane:before {
-  content: "\f072";
+  content: "";
 }
 
-/* line 477, ../sass/font-awesome.sass */
+/* line 477, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-calendar:before {
-  content: "\f073";
+  content: "";
 }
 
-/* line 479, ../sass/font-awesome.sass */
+/* line 479, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-random:before {
-  content: "\f074";
+  content: "";
 }
 
-/* line 481, ../sass/font-awesome.sass */
+/* line 481, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-comment:before {
-  content: "\f075";
+  content: "";
 }
 
-/* line 483, ../sass/font-awesome.sass */
+/* line 483, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-magnet:before {
-  content: "\f076";
+  content: "";
 }
 
-/* line 485, ../sass/font-awesome.sass */
+/* line 485, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-chevron-up:before {
-  content: "\f077";
+  content: "";
 }
 
-/* line 487, ../sass/font-awesome.sass */
+/* line 487, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-chevron-down:before {
-  content: "\f078";
+  content: "";
 }
 
-/* line 489, ../sass/font-awesome.sass */
+/* line 489, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-retweet:before {
-  content: "\f079";
+  content: "";
 }
 
-/* line 491, ../sass/font-awesome.sass */
+/* line 491, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-shopping-cart:before {
-  content: "\f07a";
+  content: "";
 }
 
-/* line 493, ../sass/font-awesome.sass */
+/* line 493, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-folder-close:before {
-  content: "\f07b";
+  content: "";
 }
 
-/* line 495, ../sass/font-awesome.sass */
+/* line 495, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-folder-open:before {
-  content: "\f07c";
+  content: "";
 }
 
-/* line 497, ../sass/font-awesome.sass */
+/* line 497, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-resize-vertical:before {
-  content: "\f07d";
+  content: "";
 }
 
-/* line 499, ../sass/font-awesome.sass */
+/* line 499, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-resize-horizontal:before {
-  content: "\f07e";
+  content: "";
 }
 
-/* line 501, ../sass/font-awesome.sass */
+/* line 501, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-bar-chart:before {
-  content: "\f080";
+  content: "";
 }
 
-/* line 503, ../sass/font-awesome.sass */
+/* line 503, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-twitter-sign:before {
-  content: "\f081";
+  content: "";
 }
 
-/* line 505, ../sass/font-awesome.sass */
+/* line 505, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-facebook-sign:before {
-  content: "\f082";
+  content: "";
 }
 
-/* line 507, ../sass/font-awesome.sass */
+/* line 507, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-camera-retro:before {
-  content: "\f083";
+  content: "";
 }
 
-/* line 509, ../sass/font-awesome.sass */
+/* line 509, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-key:before {
-  content: "\f084";
+  content: "";
 }
 
-/* line 511, ../sass/font-awesome.sass */
+/* line 511, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-cogs:before {
-  content: "\f085";
+  content: "";
 }
 
-/* line 513, ../sass/font-awesome.sass */
+/* line 513, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-comments:before {
-  content: "\f086";
+  content: "";
 }
 
-/* line 515, ../sass/font-awesome.sass */
+/* line 515, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-thumbs-up:before {
-  content: "\f087";
+  content: "";
 }
 
-/* line 517, ../sass/font-awesome.sass */
+/* line 517, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-thumbs-down:before {
-  content: "\f088";
+  content: "";
 }
 
-/* line 519, ../sass/font-awesome.sass */
+/* line 519, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-star-half:before {
-  content: "\f089";
+  content: "";
 }
 
-/* line 521, ../sass/font-awesome.sass */
+/* line 521, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-heart-empty:before {
-  content: "\f08a";
+  content: "";
 }
 
-/* line 523, ../sass/font-awesome.sass */
+/* line 523, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-signout:before {
-  content: "\f08b";
+  content: "";
 }
 
-/* line 525, ../sass/font-awesome.sass */
+/* line 525, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-linkedin-sign:before {
-  content: "\f08c";
+  content: "";
 }
 
-/* line 527, ../sass/font-awesome.sass */
+/* line 527, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-pushpin:before {
-  content: "\f08d";
+  content: "";
 }
 
-/* line 529, ../sass/font-awesome.sass */
+/* line 529, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-external-link:before {
-  content: "\f08e";
+  content: "";
 }
 
-/* line 531, ../sass/font-awesome.sass */
+/* line 531, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-signin:before {
-  content: "\f090";
+  content: "";
 }
 
-/* line 533, ../sass/font-awesome.sass */
+/* line 533, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-trophy:before {
-  content: "\f091";
+  content: "";
 }
 
-/* line 535, ../sass/font-awesome.sass */
+/* line 535, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-github-sign:before {
-  content: "\f092";
+  content: "";
 }
 
-/* line 537, ../sass/font-awesome.sass */
+/* line 537, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-upload-alt:before {
-  content: "\f093";
+  content: "";
 }
 
-/* line 539, ../sass/font-awesome.sass */
+/* line 539, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-lemon:before {
-  content: "\f094";
+  content: "";
 }
 
-/* line 541, ../sass/font-awesome.sass */
+/* line 541, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-phone:before {
-  content: "\f095";
+  content: "";
 }
 
-/* line 543, ../sass/font-awesome.sass */
+/* line 543, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-check-empty:before {
-  content: "\f096";
+  content: "";
 }
 
-/* line 545, ../sass/font-awesome.sass */
+/* line 545, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-bookmark-empty:before {
-  content: "\f097";
+  content: "";
 }
 
-/* line 547, ../sass/font-awesome.sass */
+/* line 547, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-phone-sign:before {
-  content: "\f098";
+  content: "";
 }
 
-/* line 549, ../sass/font-awesome.sass */
+/* line 549, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-twitter:before {
-  content: "\f099";
+  content: "";
 }
 
-/* line 551, ../sass/font-awesome.sass */
+/* line 551, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-facebook:before {
-  content: "\f09a";
+  content: "";
 }
 
-/* line 553, ../sass/font-awesome.sass */
+/* line 553, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-github:before {
-  content: "\f09b";
+  content: "";
 }
 
-/* line 555, ../sass/font-awesome.sass */
+/* line 555, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-unlock:before {
-  content: "\f09c";
+  content: "";
 }
 
-/* line 557, ../sass/font-awesome.sass */
+/* line 557, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-credit-card:before {
-  content: "\f09d";
+  content: "";
 }
 
-/* line 559, ../sass/font-awesome.sass */
+/* line 559, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-rss:before {
-  content: "\f09e";
+  content: "";
 }
 
-/* line 561, ../sass/font-awesome.sass */
+/* line 561, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-hdd:before {
-  content: "\f0a0";
+  content: "";
 }
 
-/* line 563, ../sass/font-awesome.sass */
+/* line 563, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-bullhorn:before {
-  content: "\f0a1";
+  content: "";
 }
 
-/* line 565, ../sass/font-awesome.sass */
+/* line 565, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-bell:before {
-  content: "\f0a2";
+  content: "";
 }
 
-/* line 567, ../sass/font-awesome.sass */
+/* line 567, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-certificate:before {
-  content: "\f0a3";
+  content: "";
 }
 
-/* line 569, ../sass/font-awesome.sass */
+/* line 569, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-hand-right:before {
-  content: "\f0a4";
+  content: "";
 }
 
-/* line 571, ../sass/font-awesome.sass */
+/* line 571, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-hand-left:before {
-  content: "\f0a5";
+  content: "";
 }
 
-/* line 573, ../sass/font-awesome.sass */
+/* line 573, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-hand-up:before {
-  content: "\f0a6";
+  content: "";
 }
 
-/* line 575, ../sass/font-awesome.sass */
+/* line 575, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-hand-down:before {
-  content: "\f0a7";
+  content: "";
 }
 
-/* line 577, ../sass/font-awesome.sass */
+/* line 577, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-circle-arrow-left:before {
-  content: "\f0a8";
+  content: "";
 }
 
-/* line 579, ../sass/font-awesome.sass */
+/* line 579, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-circle-arrow-right:before {
-  content: "\f0a9";
+  content: "";
 }
 
-/* line 581, ../sass/font-awesome.sass */
+/* line 581, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-circle-arrow-up:before {
-  content: "\f0aa";
+  content: "";
 }
 
-/* line 583, ../sass/font-awesome.sass */
+/* line 583, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-circle-arrow-down:before {
-  content: "\f0ab";
+  content: "";
 }
 
-/* line 585, ../sass/font-awesome.sass */
+/* line 585, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-globe:before {
-  content: "\f0ac";
+  content: "";
 }
 
-/* line 587, ../sass/font-awesome.sass */
+/* line 587, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-wrench:before {
-  content: "\f0ad";
+  content: "";
 }
 
-/* line 589, ../sass/font-awesome.sass */
+/* line 589, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-tasks:before {
-  content: "\f0ae";
+  content: "";
 }
 
-/* line 591, ../sass/font-awesome.sass */
+/* line 591, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-filter:before {
-  content: "\f0b0";
+  content: "";
 }
 
-/* line 593, ../sass/font-awesome.sass */
+/* line 593, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-briefcase:before {
-  content: "\f0b1";
+  content: "";
 }
 
-/* line 595, ../sass/font-awesome.sass */
+/* line 595, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-fullscreen:before {
-  content: "\f0b2";
+  content: "";
 }
 
-/* line 597, ../sass/font-awesome.sass */
+/* line 597, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-group:before {
-  content: "\f0c0";
+  content: "";
 }
 
-/* line 599, ../sass/font-awesome.sass */
+/* line 599, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-link:before {
-  content: "\f0c1";
+  content: "";
 }
 
-/* line 601, ../sass/font-awesome.sass */
+/* line 601, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-cloud:before {
-  content: "\f0c2";
+  content: "";
 }
 
-/* line 603, ../sass/font-awesome.sass */
+/* line 603, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-beaker:before {
-  content: "\f0c3";
+  content: "";
 }
 
-/* line 605, ../sass/font-awesome.sass */
+/* line 605, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-cut:before {
-  content: "\f0c4";
+  content: "";
 }
 
-/* line 607, ../sass/font-awesome.sass */
+/* line 607, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-copy:before {
-  content: "\f0c5";
+  content: "";
 }
 
-/* line 609, ../sass/font-awesome.sass */
+/* line 609, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-paper-clip:before {
-  content: "\f0c6";
+  content: "";
 }
 
-/* line 611, ../sass/font-awesome.sass */
+/* line 611, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-save:before {
-  content: "\f0c7";
+  content: "";
 }
 
-/* line 613, ../sass/font-awesome.sass */
+/* line 613, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-sign-blank:before {
-  content: "\f0c8";
+  content: "";
 }
 
-/* line 615, ../sass/font-awesome.sass */
+/* line 615, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-reorder:before {
-  content: "\f0c9";
+  content: "";
 }
 
-/* line 617, ../sass/font-awesome.sass */
+/* line 617, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-list-ul:before {
-  content: "\f0ca";
+  content: "";
 }
 
-/* line 619, ../sass/font-awesome.sass */
+/* line 619, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-list-ol:before {
-  content: "\f0cb";
+  content: "";
 }
 
-/* line 621, ../sass/font-awesome.sass */
+/* line 621, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-strikethrough:before {
-  content: "\f0cc";
+  content: "";
 }
 
-/* line 623, ../sass/font-awesome.sass */
+/* line 623, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-underline:before {
-  content: "\f0cd";
+  content: "";
 }
 
-/* line 625, ../sass/font-awesome.sass */
+/* line 625, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-table:before {
-  content: "\f0ce";
+  content: "";
 }
 
-/* line 627, ../sass/font-awesome.sass */
+/* line 627, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-magic:before {
-  content: "\f0d0";
+  content: "";
 }
 
-/* line 629, ../sass/font-awesome.sass */
+/* line 629, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-truck:before {
-  content: "\f0d1";
+  content: "";
 }
 
-/* line 631, ../sass/font-awesome.sass */
+/* line 631, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-pinterest:before {
-  content: "\f0d2";
+  content: "";
 }
 
-/* line 633, ../sass/font-awesome.sass */
+/* line 633, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-pinterest-sign:before {
-  content: "\f0d3";
+  content: "";
 }
 
-/* line 635, ../sass/font-awesome.sass */
+/* line 635, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-google-plus-sign:before {
-  content: "\f0d4";
+  content: "";
 }
 
-/* line 637, ../sass/font-awesome.sass */
+/* line 637, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-google-plus:before {
-  content: "\f0d5";
+  content: "";
 }
 
-/* line 639, ../sass/font-awesome.sass */
+/* line 639, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-money:before {
-  content: "\f0d6";
+  content: "";
 }
 
-/* line 641, ../sass/font-awesome.sass */
+/* line 641, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-caret-down:before {
-  content: "\f0d7";
+  content: "";
 }
 
-/* line 643, ../sass/font-awesome.sass */
+/* line 643, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-caret-up:before {
-  content: "\f0d8";
+  content: "";
 }
 
-/* line 645, ../sass/font-awesome.sass */
+/* line 645, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-caret-left:before {
-  content: "\f0d9";
+  content: "";
 }
 
-/* line 647, ../sass/font-awesome.sass */
+/* line 647, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-caret-right:before {
-  content: "\f0da";
+  content: "";
 }
 
-/* line 649, ../sass/font-awesome.sass */
+/* line 649, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-columns:before {
-  content: "\f0db";
+  content: "";
 }
 
-/* line 651, ../sass/font-awesome.sass */
+/* line 651, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-sort:before {
-  content: "\f0dc";
+  content: "";
 }
 
-/* line 653, ../sass/font-awesome.sass */
+/* line 653, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-sort-down:before {
-  content: "\f0dd";
+  content: "";
 }
 
-/* line 655, ../sass/font-awesome.sass */
+/* line 655, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-sort-up:before {
-  content: "\f0de";
+  content: "";
 }
 
-/* line 657, ../sass/font-awesome.sass */
+/* line 657, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-envelope-alt:before {
-  content: "\f0e0";
+  content: "";
 }
 
-/* line 659, ../sass/font-awesome.sass */
+/* line 659, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-linkedin:before {
-  content: "\f0e1";
+  content: "";
 }
 
-/* line 661, ../sass/font-awesome.sass */
+/* line 661, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-undo:before {
-  content: "\f0e2";
+  content: "";
 }
 
-/* line 663, ../sass/font-awesome.sass */
+/* line 663, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-legal:before {
-  content: "\f0e3";
+  content: "";
 }
 
-/* line 665, ../sass/font-awesome.sass */
+/* line 665, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-dashboard:before {
-  content: "\f0e4";
+  content: "";
 }
 
-/* line 667, ../sass/font-awesome.sass */
+/* line 667, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-comment-alt:before {
-  content: "\f0e5";
+  content: "";
 }
 
-/* line 669, ../sass/font-awesome.sass */
+/* line 669, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-comments-alt:before {
-  content: "\f0e6";
+  content: "";
 }
 
-/* line 671, ../sass/font-awesome.sass */
+/* line 671, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-bolt:before {
-  content: "\f0e7";
+  content: "";
 }
 
-/* line 673, ../sass/font-awesome.sass */
+/* line 673, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-sitemap:before {
-  content: "\f0e8";
+  content: "";
 }
 
-/* line 675, ../sass/font-awesome.sass */
+/* line 675, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-umbrella:before {
-  content: "\f0e9";
+  content: "";
 }
 
-/* line 677, ../sass/font-awesome.sass */
+/* line 677, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-paste:before {
-  content: "\f0ea";
+  content: "";
 }
 
-/* line 679, ../sass/font-awesome.sass */
+/* line 679, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-lightbulb:before {
-  content: "\f0eb";
+  content: "";
 }
 
-/* line 681, ../sass/font-awesome.sass */
+/* line 681, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-exchange:before {
-  content: "\f0ec";
+  content: "";
 }
 
-/* line 683, ../sass/font-awesome.sass */
+/* line 683, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-cloud-download:before {
-  content: "\f0ed";
+  content: "";
 }
 
-/* line 685, ../sass/font-awesome.sass */
+/* line 685, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-cloud-upload:before {
-  content: "\f0ee";
+  content: "";
 }
 
-/* line 687, ../sass/font-awesome.sass */
+/* line 687, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-user-md:before {
-  content: "\f0f0";
+  content: "";
 }
 
-/* line 689, ../sass/font-awesome.sass */
+/* line 689, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-stethoscope:before {
-  content: "\f0f1";
+  content: "";
 }
 
-/* line 691, ../sass/font-awesome.sass */
+/* line 691, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-suitcase:before {
-  content: "\f0f2";
+  content: "";
 }
 
-/* line 693, ../sass/font-awesome.sass */
+/* line 693, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-bell-alt:before {
-  content: "\f0f3";
+  content: "";
 }
 
-/* line 695, ../sass/font-awesome.sass */
+/* line 695, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-coffee:before {
-  content: "\f0f4";
+  content: "";
 }
 
-/* line 697, ../sass/font-awesome.sass */
+/* line 697, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-food:before {
-  content: "\f0f5";
+  content: "";
 }
 
-/* line 699, ../sass/font-awesome.sass */
+/* line 699, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-file-alt:before {
-  content: "\f0f6";
+  content: "";
 }
 
-/* line 701, ../sass/font-awesome.sass */
+/* line 701, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-building:before {
-  content: "\f0f7";
+  content: "";
 }
 
-/* line 703, ../sass/font-awesome.sass */
+/* line 703, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-hospital:before {
-  content: "\f0f8";
+  content: "";
 }
 
-/* line 705, ../sass/font-awesome.sass */
+/* line 705, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-ambulance:before {
-  content: "\f0f9";
+  content: "";
 }
 
-/* line 707, ../sass/font-awesome.sass */
+/* line 707, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-medkit:before {
-  content: "\f0fa";
+  content: "";
 }
 
-/* line 709, ../sass/font-awesome.sass */
+/* line 709, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-fighter-jet:before {
-  content: "\f0fb";
+  content: "";
 }
 
-/* line 711, ../sass/font-awesome.sass */
+/* line 711, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-beer:before {
-  content: "\f0fc";
+  content: "";
 }
 
-/* line 713, ../sass/font-awesome.sass */
+/* line 713, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-h-sign:before {
-  content: "\f0fd";
+  content: "";
 }
 
-/* line 715, ../sass/font-awesome.sass */
+/* line 715, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-plus-sign-alt:before {
-  content: "\f0fe";
+  content: "";
 }
 
-/* line 717, ../sass/font-awesome.sass */
+/* line 717, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-double-angle-left:before {
-  content: "\f100";
+  content: "";
 }
 
-/* line 719, ../sass/font-awesome.sass */
+/* line 719, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-double-angle-right:before {
-  content: "\f101";
+  content: "";
 }
 
-/* line 721, ../sass/font-awesome.sass */
+/* line 721, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-double-angle-up:before {
-  content: "\f102";
+  content: "";
 }
 
-/* line 723, ../sass/font-awesome.sass */
+/* line 723, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-double-angle-down:before {
-  content: "\f103";
+  content: "";
 }
 
-/* line 725, ../sass/font-awesome.sass */
+/* line 725, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-angle-left:before {
-  content: "\f104";
+  content: "";
 }
 
-/* line 727, ../sass/font-awesome.sass */
+/* line 727, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-angle-right:before {
-  content: "\f105";
+  content: "";
 }
 
-/* line 729, ../sass/font-awesome.sass */
+/* line 729, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-angle-up:before {
-  content: "\f106";
+  content: "";
 }
 
-/* line 731, ../sass/font-awesome.sass */
+/* line 731, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-angle-down:before {
-  content: "\f107";
+  content: "";
 }
 
-/* line 733, ../sass/font-awesome.sass */
+/* line 733, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-desktop:before {
-  content: "\f108";
+  content: "";
 }
 
-/* line 735, ../sass/font-awesome.sass */
+/* line 735, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-laptop:before {
-  content: "\f109";
+  content: "";
 }
 
-/* line 737, ../sass/font-awesome.sass */
+/* line 737, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-tablet:before {
-  content: "\f10a";
+  content: "";
 }
 
-/* line 739, ../sass/font-awesome.sass */
+/* line 739, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-mobile-phone:before {
-  content: "\f10b";
+  content: "";
 }
 
-/* line 741, ../sass/font-awesome.sass */
+/* line 741, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-circle-blank:before {
-  content: "\f10c";
+  content: "";
 }
 
-/* line 743, ../sass/font-awesome.sass */
+/* line 743, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-quote-left:before {
-  content: "\f10d";
+  content: "";
 }
 
-/* line 745, ../sass/font-awesome.sass */
+/* line 745, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-quote-right:before {
-  content: "\f10e";
+  content: "";
 }
 
-/* line 747, ../sass/font-awesome.sass */
+/* line 747, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-spinner:before {
-  content: "\f110";
+  content: "";
 }
 
-/* line 749, ../sass/font-awesome.sass */
+/* line 749, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-circle:before {
-  content: "\f111";
+  content: "";
 }
 
-/* line 751, ../sass/font-awesome.sass */
+/* line 751, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-reply:before {
-  content: "\f112";
+  content: "";
 }
 
-/* line 753, ../sass/font-awesome.sass */
+/* line 753, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-github-alt:before {
-  content: "\f113";
+  content: "";
 }
 
-/* line 755, ../sass/font-awesome.sass */
+/* line 755, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-folder-close-alt:before {
-  content: "\f114";
+  content: "";
 }
 
-/* line 757, ../sass/font-awesome.sass */
+/* line 757, /home/ravi/code/pckl.me/static/sass/font-awesome.sass */
 .icon-folder-open-alt:before {
-  content: "\f115";
+  content: "";
 }
 
-/* line 17, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 5, /home/ravi/.rvm/gems/ruby-1.9.3-p286/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -1629,56 +1608,56 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, /home/ravi/.rvm/gems/ruby-1.9.3-p286/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, /home/ravi/.rvm/gems/ruby-1.9.3-p286/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, /home/ravi/.rvm/gems/ruby-1.9.3-p286/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, /home/ravi/.rvm/gems/ruby-1.9.3-p286/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, /home/ravi/.rvm/gems/ruby-1.9.3-p286/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, /home/ravi/.rvm/gems/ruby-1.9.3-p286/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, /home/ravi/.rvm/gems/ruby-1.9.3-p286/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+/* line 116, /home/ravi/.rvm/gems/ruby-1.9.3-p286/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
 /*config */
 /* ------------------------------------------------------------------------- */
 /* Layout */
-/* line 14, ../../../../../../var/lib/gems/1.9.1/gems/susy-1.0.5/sass/susy/_grid.scss */
+/* line 14, /home/ravi/.rvm/gems/ruby-1.9.3-p286/gems/susy-2.2.5/sass/susy/language/susyone/_grid.scss */
 * {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -1688,11 +1667,12 @@ html {
   line-height: 150%;
   font-family: "Garamond", "Georgia", serif;
   color: #373b44;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f8f8ff), color-stop(100%, transparent));
-  background-image: -webkit-linear-gradient(top, #f8f8ff 0%, transparent 100%);
-  background-image: -moz-linear-gradient(top, #f8f8ff 0%, transparent 100%);
-  background-image: -o-linear-gradient(top, #f8f8ff 0%, transparent 100%);
-  background-image: linear-gradient(top, #f8f8ff 0%, transparent 100%);
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y4ZjhmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f8f8ff), color-stop(100%, rgba(0, 0, 0, 0)));
+  background-image: -moz-linear-gradient(top, #f8f8ff 0%, rgba(0, 0, 0, 0) 100%);
+  background-image: -webkit-linear-gradient(top, #f8f8ff 0%, rgba(0, 0, 0, 0) 100%);
+  background-image: linear-gradient(to bottom, #f8f8ff 0%, rgba(0, 0, 0, 0) 100%);
   background-attachment: fixed;
 }
 
@@ -1751,7 +1731,7 @@ code {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 38, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, /home/ravi/.rvm/gems/ruby-1.9.3-p286/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
 #main:after {
   content: "";
   display: table;
@@ -1760,8 +1740,21 @@ code {
 @media (min-width: 37em) {
   /* line 68, ../sass/screen.sass */
   #main {
+    *zoom: 1;
     max-width: 592px;
     max-width: 37rem;
+    padding-left: 16px;
+    padding-left: 1rem;
+    padding-right: 16px;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 38, /home/ravi/.rvm/gems/ruby-1.9.3-p286/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+  #main:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }
 
@@ -1793,18 +1786,12 @@ hr {
   clear: both;
   border: 0;
   height: 2px;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(2%, transparent), color-stop(40%, #73c8a9), color-stop(50%, #dee1b6), color-stop(60%, #e1b866), color-stop(70%, #bd5532), color-stop(95%, #373b44), color-stop(100%, transparent));
-  background-image: -webkit-linear-gradient(left, transparent 2%, #73c8a9 40%, #dee1b6 50%, #e1b866 60%, #bd5532 70%, #373b44 95%, transparent 100%);
-  background-image: -moz-linear-gradient(left, transparent 2%, #73c8a9 40%, #dee1b6 50%, #e1b866 60%, #bd5532 70%, #373b44 95%, transparent 100%);
-  background-image: -o-linear-gradient(left, transparent 2%, #73c8a9 40%, #dee1b6 50%, #e1b866 60%, #bd5532 70%, #373b44 95%, transparent 100%);
-  background-image: linear-gradient(left, transparent 2%, #73c8a9 40%, #dee1b6 50%, #e1b866 60%, #bd5532 70%, #373b44 95%, transparent 100%);
-}
-/* line 93, ../sass/screen.sass */
-hr:hover {
-  width: 80%;
+  background-color: #373b44;
+  /*   +background-image(linear-gradient(left, transparent 2%, $cyan-clouds 40%, $morning-light 50%, $soft-orange 60%, $orange-clouds 70%, $low-light 95%, transparent 100%)) */
+  width: 95%;
 }
 
-/* line 96, ../sass/screen.sass */
+/* line 93, ../sass/screen.sass */
 pre > code {
   line-height: 1;
   font-family: "Consolas", "Ubuntu Mono", monospace;
@@ -1814,7 +1801,7 @@ pre > code {
   margin-bottom: 1.5rem;
 }
 
-/* line 105, ../sass/screen.sass */
+/* line 102, ../sass/screen.sass */
 .lime {
   background-image: url("/static/images/lime.png");
   width: 33px;
@@ -1823,7 +1810,7 @@ pre > code {
   margin: 0 auto;
 }
 @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-  /* line 105, ../sass/screen.sass */
+  /* line 102, ../sass/screen.sass */
   .lime {
     /* on retina, use image that's scaled by 2 */
     background-image: url("/static/images/lime@2X.png");
@@ -1831,38 +1818,38 @@ pre > code {
   }
 }
 
-/* line 113, ../sass/screen.sass */
+/* line 110, ../sass/screen.sass */
 #main > header {
   clear: both;
   vertical-align: baseline;
 }
-/* line 116, ../sass/screen.sass */
+/* line 113, ../sass/screen.sass */
 #main > header > a {
   float: left;
   color: #373b44;
   background-color: transparent;
 }
-/* line 120, ../sass/screen.sass */
+/* line 117, ../sass/screen.sass */
 #main > header > a:hover, #main > header > a:hover:visited {
   background-color: transparent;
 }
-/* line 122, ../sass/screen.sass */
+/* line 119, ../sass/screen.sass */
 #main > header nav {
   float: right;
   margin-right: 0;
-  #margin-left: -1rem;
+  *margin-left: -1rem;
   display: inline;
   float: right;
   color: transparent;
   line-height: 0;
 }
 @media (min-width: 37em) {
-  /* line 122, ../sass/screen.sass */
+  /* line 119, ../sass/screen.sass */
   #main > header nav {
     color: inherit;
   }
 }
-/* line 129, ../sass/screen.sass */
+/* line 126, ../sass/screen.sass */
 #main > header nav > a {
   font-style: italic;
   padding-left: 0.5rem;
@@ -1871,24 +1858,24 @@ pre > code {
   line-height: 1.5rem;
 }
 @media (min-width: 37em) {
-  /* line 129, ../sass/screen.sass */
+  /* line 126, ../sass/screen.sass */
   #main > header nav > a {
     display: inline;
   }
 }
-/* line 138, ../sass/screen.sass */
+/* line 135, ../sass/screen.sass */
 #main footer {
   font-size: 0.875rem;
   margin-bottom: 1rem;
   color: #656c7c;
 }
 
-/* line 144, ../sass/screen.sass */
+/* line 141, ../sass/screen.sass */
 article.photo {
   float: none;
   width: auto;
   margin-right: auto;
-  #margin-left: auto;
+  *margin-left: auto;
   display: block;
   position: fixed;
   top: auto;
@@ -1900,79 +1887,77 @@ article.photo {
   -o-background-size: contain;
   background-size: contain;
 }
-/* line 157, ../sass/screen.sass */
+/* line 154, ../sass/screen.sass */
 article.photo > img {
   width: 100%;
   height: 100%;
 }
-/* line 160, ../sass/screen.sass */
+/* line 157, ../sass/screen.sass */
 article > header {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 162, ../sass/screen.sass */
+/* line 159, ../sass/screen.sass */
 article > header > h1.title {
-  display: inline;
   float: left;
 }
-/* line 164, ../sass/screen.sass */
+/* line 161, ../sass/screen.sass */
 article > header > time.pubdate {
   color: #c4c8cf;
-  display: inline;
   float: right;
 }
 
-/* line 169, ../sass/screen.sass */
+/* line 166, ../sass/screen.sass */
 li.index {
   list-style: none;
   clear: both;
 }
 @media (min-width: 37em) {
-  /* line 169, ../sass/screen.sass */
+  /* line 166, ../sass/screen.sass */
   li.index {
     list-style: lower-greek;
   }
 }
-/* line 174, ../sass/screen.sass */
+/* line 171, ../sass/screen.sass */
 li.index time.pubdate {
   float: right;
   margin-right: 0;
-  #margin-left: -1rem;
+  *margin-left: -1rem;
   display: inline;
 }
 
-/* line 178, ../sass/screen.sass */
+/* line 175, ../sass/screen.sass */
 li {
   list-style: circle;
 }
 
-/* line 181, ../sass/screen.sass */
+/* line 178, ../sass/screen.sass */
 li ul > li {
   list-style: square;
   margin-left: 1rem;
 }
 
-/* line 185, ../sass/screen.sass */
+/* line 182, ../sass/screen.sass */
 p + ul {
   margin-bottom: 0.5rem;
 }
 
-/* line 189, ../sass/screen.sass */
+/* line 186, ../sass/screen.sass */
 article > header {
   display: block;
 }
-/* line 192, ../sass/screen.sass */
+/* line 189, ../sass/screen.sass */
 article > header > h1::after {
   content: " →";
 }
 
-/* line 195, ../sass/screen.sass */
+/* line 192, ../sass/screen.sass */
 .intro {
   padding: 1rem 0 1rem 0;
   overflow: visible;
   clear: both;
 }
-/* line 199, ../sass/screen.sass */
+/* line 196, ../sass/screen.sass */
 .intro .avatar {
   width: 100%;
   float: left;
@@ -1980,14 +1965,14 @@ article > header > h1::after {
   display: inline;
 }
 @media (min-width: 37em) {
-  /* line 199, ../sass/screen.sass */
+  /* line 196, ../sass/screen.sass */
   .intro .avatar {
     width: 48.57143%;
     float: left;
     margin-right: 2.85714%;
   }
 }
-/* line 203, ../sass/screen.sass */
+/* line 200, ../sass/screen.sass */
 .intro .avatar img {
   width: 100%;
   border-radius: 50%;
@@ -1996,12 +1981,12 @@ article > header > h1::after {
   -moz-box-shadow: 2px 2px 12px 5px #c7c7c9;
 }
 @media (min-width: 37em) {
-  /* line 203, ../sass/screen.sass */
+  /* line 200, ../sass/screen.sass */
   .intro .avatar img {
     width: 250px;
   }
 }
-/* line 211, ../sass/screen.sass */
+/* line 208, ../sass/screen.sass */
 .intro h1.title {
   width: 100%;
   float: left;
@@ -2009,7 +1994,7 @@ article > header > h1::after {
   display: inline;
 }
 @media (min-width: 37em) {
-  /* line 211, ../sass/screen.sass */
+  /* line 208, ../sass/screen.sass */
   .intro h1.title {
     width: 48.57143%;
     float: left;
@@ -2018,12 +2003,12 @@ article > header > h1::after {
     margin-right: 0;
   }
 }
-/* line 216, ../sass/screen.sass */
+/* line 213, ../sass/screen.sass */
 .intro .bio {
   clear: both;
 }
 
-/* line 220, ../sass/screen.sass */
+/* line 217, ../sass/screen.sass */
 .milestones .milestone {
   margin-bottom: 2rem;
   border-radius: 15px;
@@ -2032,96 +2017,96 @@ article > header > h1::after {
   border-width: 2px;
   padding: 5px;
 }
-/* line 223, ../sass/screen.sass */
+/* line 220, ../sass/screen.sass */
 .milestones .milestone a h3:hover {
   color: #bd5532;
 }
-/* line 231, ../sass/screen.sass */
+/* line 228, ../sass/screen.sass */
 .milestones .milestone .wrap {
   overflow: hidden;
   *zoom: 1;
 }
 @media (min-width: 37em) {
-  /* line 231, ../sass/screen.sass */
+  /* line 228, ../sass/screen.sass */
   .milestones .milestone .wrap {
     display: table;
   }
-  /* line 234, ../sass/screen.sass */
+  /* line 231, ../sass/screen.sass */
   .milestones .milestone .wrap .markdown {
     display: table-cell;
     vertical-align: middle;
   }
 }
-/* line 239, ../sass/screen.sass */
+/* line 236, ../sass/screen.sass */
 .milestones .milestone .wrap img {
   border-radius: 15px;
   float: left;
   margin: 1rem;
   max-width: none;
 }
-/* line 244, ../sass/screen.sass */
+/* line 241, ../sass/screen.sass */
 .milestones h1, .milestones h2, .milestones h3, .milestones h4, .milestones h5 {
   margin-bottom: 0.25rem;
   color: #4e5360;
   line-height: 100%;
 }
-/* line 248, ../sass/screen.sass */
+/* line 245, ../sass/screen.sass */
 .milestones h1 a, .milestones h2 a, .milestones h3 a, .milestones h4 a, .milestones h5 a {
   font-size: 1rem;
 }
-/* line 250, ../sass/screen.sass */
+/* line 247, ../sass/screen.sass */
 .milestones .subtitle {
   color: #7e8596;
   text-align: right;
 }
-/* line 253, ../sass/screen.sass */
+/* line 250, ../sass/screen.sass */
 .milestones p.status {
   text-align: right;
   font-variant-caps: all-small-caps;
   font-size: 0.25em;
 }
 
-/* line 258, ../sass/screen.sass */
+/* line 255, ../sass/screen.sass */
 blockquote {
-  border-left: 4px solid #dddddd;
+  border-left: 4px solid #ddd;
   padding-left: 11px;
-  color: #555555;
+  color: #555;
   margin: 14px 0;
 }
 
-/* line 264, ../sass/screen.sass */
+/* line 261, ../sass/screen.sass */
 p {
   margin: 0 0 1rem;
 }
 
-/* line 267, ../sass/screen.sass */
+/* line 264, ../sass/screen.sass */
 strong {
   font-weight: bold;
 }
 
-/* line 270, ../sass/screen.sass */
+/* line 267, ../sass/screen.sass */
 img, object, video {
   max-width: 100%;
 }
 
-/* line 274, ../sass/screen.sass */
+/* line 271, ../sass/screen.sass */
 article.flatpage img {
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
-/* line 278, ../sass/screen.sass */
+/* line 275, ../sass/screen.sass */
 article.flatpage iframe.youtube {
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
 
-/* line 283, ../sass/screen.sass */
+/* line 280, ../sass/screen.sass */
 .cv .row .row-item {
   display: inline-block;
 }
-/* line 285, ../sass/screen.sass */
+/* line 282, ../sass/screen.sass */
 .cv .row .row-item:last-child {
   text-align: right;
   float: right;
@@ -2129,13 +2114,13 @@ article.flatpage iframe.youtube {
   *zoom: 1;
 }
 
-/* line 290, ../sass/screen.sass */
+/* line 287, ../sass/screen.sass */
 table {
-  text-shadow: 1px 1px 0px white;
+  text-shadow: 1px 1px 0px #fff;
   width: 100%;
   background: #eaebec;
   margin: 20px;
-  border: #cccccc 1px solid;
+  border: #ccc 1px solid;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -2143,7 +2128,7 @@ table {
   -webkit-box-shadow: 0 1px 2px #d1d1d1;
   box-shadow: 0 1px 2px #d1d1d1;
 }
-/* line 302, ../sass/screen.sass */
+/* line 299, ../sass/screen.sass */
 table th {
   padding: 21px 25px 22px 25px;
   border-top: 1px solid #fafafa;
@@ -2152,80 +2137,80 @@ table th {
   background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
   background: -moz-linear-gradient(top, #ededed, #ebebeb);
 }
-/* line 309, ../sass/screen.sass */
+/* line 306, ../sass/screen.sass */
 table th:first-child {
   text-align: left;
   padding-left: 20px;
 }
-/* line 312, ../sass/screen.sass */
+/* line 309, ../sass/screen.sass */
 table tr {
   text-align: center;
   padding-left: 20px;
 }
-/* line 314, ../sass/screen.sass */
+/* line 311, ../sass/screen.sass */
 table tr:first-child th:first-child {
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
   border-top-left-radius: 3px;
 }
-/* line 318, ../sass/screen.sass */
+/* line 315, ../sass/screen.sass */
 table tr:first-child th:last-child {
   -moz-border-radius-topright: 3px;
   -webkit-border-top-right-radius: 3px;
   border-top-right-radius: 3px;
 }
-/* line 324, ../sass/screen.sass */
+/* line 321, ../sass/screen.sass */
 table td {
   padding: 1rem;
-  border-top: 1px solid white;
+  border-top: 1px solid #ffffff;
   border-bottom: 1px solid #e0e0e0;
   border-left: 1px solid #e0e0e0;
   background: #fafafa;
   background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
   background: -moz-linear-gradient(top, #fbfbfb, #fafafa);
 }
-/* line 325, ../sass/screen.sass */
+/* line 322, ../sass/screen.sass */
 table td:first-child {
   text-align: left;
   padding-left: 20px;
   border-left: 0;
 }
-/* line 337, ../sass/screen.sass */
+/* line 334, ../sass/screen.sass */
 table tr.even td {
   background: #f6f6f6;
   background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
   background: -moz-linear-gradient(top, #f8f8f8, #f6f6f6);
 }
-/* line 341, ../sass/screen.sass */
+/* line 338, ../sass/screen.sass */
 table tr:last-child td {
   border-bottom: 0;
 }
-/* line 343, ../sass/screen.sass */
+/* line 340, ../sass/screen.sass */
 table tr:last-child td:first-child {
   -moz-border-radius-bottomleft: 3px;
   -webkit-border-bottom-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
-/* line 347, ../sass/screen.sass */
+/* line 344, ../sass/screen.sass */
 table tr:last-child td:last-child {
   -moz-border-radius-bottomright: 3px;
   -webkit-border-bottom-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-/* line 351, ../sass/screen.sass */
+/* line 348, ../sass/screen.sass */
 table tr:hover td {
   background: #f2f2f2;
   background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
   background: -moz-linear-gradient(top, #f2f2f2, #f0f0f0);
 }
 
-/* line 356, ../sass/screen.sass */
+/* line 353, ../sass/screen.sass */
 #photo_index {
   text-align: center;
   display: table;
 }
 
-/* line 360, ../sass/screen.sass */
+/* line 357, ../sass/screen.sass */
 figure.photo_index {
   display: table-cell;
   width: 100%;
@@ -2234,13 +2219,13 @@ figure.photo_index {
   display: inline;
 }
 @media (min-width: 37em) {
-  /* line 360, ../sass/screen.sass */
+  /* line 357, ../sass/screen.sass */
   figure.photo_index {
     width: 22.85714%;
     float: left;
     margin-right: 2.85714%;
   }
-  /* line 365, ../sass/screen.sass */
+  /* line 362, ../sass/screen.sass */
   figure.photo_index:nth-child(4n) {
     float: right;
     margin-right: 0;

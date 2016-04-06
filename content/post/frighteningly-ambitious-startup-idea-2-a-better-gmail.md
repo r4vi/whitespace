@@ -1,5 +1,5 @@
 date: 2013-04-01 18:11:44.367787
-title: 'Frighteningly Ambitious Startup Idea #2: A Better Gmail'
+title: 'A Better Gmail'
 tags:
   - email
   - idea
@@ -49,13 +49,12 @@ I propose we write a new email service—let's call it **smashingmail**.  I thin
 a
 like-for-like clone in something like [Derbyjs][derbyjs] or [Meteor][meteor] 
 wouldn't be that obscenely hard.
-And most people I've spoken to agree with me. They do question how I'm going
-to build a replacement for Google's web-scale awesome cloud compute
+And most people I've spoken to agree with me. They do question how
+hypothetically I'd
+build a replacement for Google's cloud compute
 infrastructure though. 
 
-I have no intention. 
-
-My plan is to just fire up one [$5
+Why not just fire up one [$5
 Digital Ocean VPS][doprice] per user, of course the user's emails are at the
 mercy of the hard drive reliability gods but that can be solved by using
 [GlusterFS][gluster] across all of the VPSes and maybe some additional high 
