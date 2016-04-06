@@ -10,12 +10,14 @@ block content
   h4='Full Stack Software Developer'
   :markdown
     ##### What I can do for you?
-    I'm available to do development projects. I usually work in `Python`, but 
+    I'm available to work on software development projects, 
+    I can also help you build an excellent team that is focused on delivery. 
+    I usually work in `Python`, but 
     sometimes you'll catch me working in `JavaScript` on `node.js`. 
     For large web projects I like `Django`, for small ones I like `Flask`.
 
     ##### Any examples?
-    Most recently at [Pitchup.com](http://www.pitchup.com), I have helped the 
+    Recently at [Pitchup.com](http://www.pitchup.com), I have helped the 
     company grow from myself and the [founder](http://www.pitchup.com/) 
     working in a coffee shop to 
     the biggest online camping booking service in Europe in just over two years.
@@ -28,11 +30,9 @@ block content
     I steer clear of anything that resembles spam, scams or ponzi schemes.
 
     Aside from helping you with the technical side of your business I'm extremely
-    business focused. Unlike many developers I understand that there is a fine
-    line between writing technically perfect software and making compromises 
-    so that the business can grow quickly.
+    business focused. 
 
-    I can also help you with your fund-raising [pitches](http://dl.dropboxusercontent.com/u/811105/code-projects/TripMediPitchPublic.pdf),
+    I can help you with your fund-raising [pitches](http://dl.dropboxusercontent.com/u/811105/code-projects/TripMediPitchPublic.pdf),
     sales commission structuring, marketing ROI measurement and aligning your
     product with your business objectives.
 
@@ -41,29 +41,55 @@ block content
     hr
     h3="Employment"
     div.row
-      h4.row-item="Betatype, London"
+      h4.row-item
+        a(href='http://www.betaty.pe/')="Betatype, London"
       p.row-item="Ongoing"
     h5='Technical Advisory'
     :markdown
-      `Python` and `JavaScript` developer on multiple digital transformation projects for the Ministry of Justice.
+      Advising Betatype on how to move their product which is currently a
+      desktop application to a cloud based subscription service.
+
     div.row
-      h4.row-item="Ministry of Justice Digital Service, London"
-      p.row-item="2013/03/02—Present"
+      h4.row-item
+        a(href='https://mojdigital.blog.gov.uk/')="Ministry of Justice Digital, London"
+      p.row-item="2014/03/02—Present"
     h5='Senior Developer'
     :markdown
       `Python` and `JavaScript` developer on multiple digital transformation projects for the Ministry of Justice.
       
-      * Created a service to turn a phone based **Civil Legal Advice phone-line** into a fully
-      digital process.
-        * A public facing website where people can apply 
-          for legal advice and see if they are eligible.
-        * A call handling system to follow up with users and determine
-          if their applications can be sent to a legal advisor.
-        * A legal advisor facing interface allowing them to 
-        take on cases and invoice the Legal Aid Agency for any work they have done.
+      * Created a service to turn a phone based **Civil Legal Advice** phone-line into an
+        online, [self-service process][clap].
+        * Designed and implemented an [API][cla_api] for various web based clients to interact with the service.
+        * Worked on the backend much of which was about translating [legislation][lapso] into [code][cla_meanstest].
+      * Built the [Victims' Information Service][vis] a [Django CMS][vis_code] for police forces to signpost victims to the services available in their area.
+      * Worked on a technical discovery to build a [proof of concept][jsum_deploy] application deployment solution
+        based on `CoreOS`, `fleet` and `Docker`, hosted on Amazon Web Services.
+      [cla_api]: http://ministryofjustice.github.io/cla_docs/cla_backend/operator%20api.html
+      [cla_meanstest]: https://github.com/ministryofjustice/cla_backend/blob/develop/cla_backend/libs/eligibility_calculator/calculator.py
+      [lapso]: http://www.legislation.gov.uk/ukpga/2012/10/contents
+      [vis]: https://www.victimsinformationservice.org.uk/
+      [vis_code]: https://github.com/ministryofjustice/vis
+      [clap]: https://www.gov.uk/check-if-civil-legal-advice-can-help-you
+      [jsum_deploy]: https://github.com/ministryofjustice/jury-summons-deploy
 
     div.row
-      h4.row-item="Pitchup.com, London"
+      h4.row-item="Browserstory, London"
+      p.row-item="2013/09/01—2014/03/01"
+    h5='Founder'
+    :markdown
+      Browserstory is a product that allows people to add a single javascript
+      file to their site and be able to watch visitors interact with it in
+      real time.
+
+      Working with a designer I built this product and took it to customer 
+      validation stage. The product had a customer dashboard site built in
+      `Clojure`, and the `JavaScript` library was transpiled from `ClojureScript`.
+      We stopped work on this after running a few trials with alpha customers and
+      found it didn't meet user needs.
+      
+    div.row
+      h4.row-item
+        a(href='https://www.pitchup.com/about/')="Pitchup.com, London"
       p.row-item="2011/07/01—2013/09/01"
     h5='Lead Developer & Acting CTO'
     :markdown
@@ -87,9 +113,36 @@ block content
       * Maintaining and designing Pitchup.com's server architecture, a hybrid physical and cloud setup that can scale with Pitchup.com's seasonal traffic
       * Built a real-time inventory and expected revenue based CPC system to optimise Google AdWords bidding
 
-
     div.row
-      h4.row-item="Standard Bank, London"
+      h4.row-item
+        a(href='https://startupbus.com/')="StartupBus, San Francisco"
+      p.row-item='2012/03/01—2012/04/01'
+    h5="Developer - Growth Platform (remote)"
+    :markdown
+      StartupBus is an annual hackathon that takes place on a three day
+      bus ride.
+ 
+      I conceived and implemented [invite based][invite] viral marketing system for 
+      driving people to participate in the competition. On the backend was 
+      an **insights dashboard**
+      for processing applications that automatically gathered information about applicants
+      from GitHub, LinkedIn and other public data sources.
+
+      I also came up with the idea and built the successful [unlock your region][unlock] campaign
+      which encouraged people to vote for a bus to depart from their city by creating 
+      social media _buzz_. The backend was monitoring Twitter and Facebook in real-time 
+      and displaying which cities were winning to drive competitive behaviour from users.
+
+      Both of these projects were built with `Ruby on Rails`.
+
+      [invite]: https://news.ycombinator.com/item?id=3579891
+      [unlock]: http://web.archive.org/web/20120622070942/http://startupbus.com/unlock
+      
+      
+      
+    div.row
+      h4.row-item
+        a(href='http://corporateandinvestment.standardbank.com/')="Standard Bank, London"
       p.row-item='2007/10/01—2011/06/31'
     h5="Front office Commodities Developer"
     :markdown
@@ -115,7 +168,8 @@ block content
       * Production and overnight support for the bank’s main FX booking system.
       * Developed a P&L reconciliation and reporting system for the Financial Risk Management department using Python, Sybase and the Pylons web framework to run on Solaris.
     div.row
-      h4.row-item="3M UK PLC, Berkshire"
+      h4.row-item
+        a(href='http://corporateandinvestment.standardbank.com/')="3M UK PLC, Berkshire"
       p.row-item='2005—2006'
     h5="Technical Infrastructure Analyst"
     :markdown
@@ -127,7 +181,8 @@ block content
       * Windows Cluster configuration and set-up.
 
     div.row
-      h4.row-item="Jessops Group"
+      h4.row-item
+        a(href='http://www.jessops.com/')="Jessops Group"
       p.row-item='2001-2005'
     h5='Various Part-Time and Summer Roles'
     :markdown
@@ -140,16 +195,18 @@ block content
     :markdown
       || **Language** || **Level** || *Comment* ||
       || Python       || Advanced  || Strong commercial experience ||
-      || JavaScript / CoffeScript  || Advanced  || Strong commercial experience in both the browser and `nodejs` ||
+      || JavaScript   || Advanced  || Strong commercial experience in both the browser and `nodejs`. Lots of experience with Angular JS ||
       || C#           || Advanced  || Strong commercial experience ||
       || Clojure      || Intermediate  || Used mostly for personal projects ||
       || Ruby/Rails      || Intermediate  || Built the candidate application workflow for the [StartupBus](http://www.startupbus.com/) using Rails ||
       || Java           || Intermediate  || Main language used during my degree, however I may be a bit rusty ||
+      || Haskell        || Beginner  || Experimenting ||
+      || OCaml          || Beginner  || Experimenting ||
     h4="Other Skills"
     :markdown
-      || **Platform** || Linux, FreeBSD, Solaris, Windows  ||
-      || **Database** || MS-SQL, PostgreSQL, MySQL, sqlite, CouchDB, MongoDB, Redis  ||
-      || **Tools**    || Git, Vagrant, Chef, Amazon Web Services, TravisCI, nginx, memcached, Varnish ||
+      || **Platform** || Linux, FreeBSD, Windows  ||
+      || **Database** || PostgreSQL, MySQL, MS-SQL, CouchDB, Redis  ||
+      || **Tools**    || Git, Vagrant, Chef, Amazon Web Services, TravisCI, nginx, memcached, Varnish, Docker, CoreOS, etcd ||
 
     h3='Education'
     p.row

@@ -13,3 +13,4 @@ static/.sass-cache/
 static/.webassets-cache/*
 settings.py
 node_modules/
+.sass-cache/
