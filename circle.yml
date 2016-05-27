@@ -1,0 +1,6 @@
+deployment:
+  production:
+    branch: master
+    commands:
+      - ./sitebuilder.py build
+      - ./deploy.sh 
