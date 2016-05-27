@@ -11,6 +11,6 @@ static/.sass-cache/
 .iml
 *.iml
 static/.webassets-cache/*
-settings.py
 node_modules/
 .sass-cache/
+settings_local.py
