@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# coding=utf-8
 from collections import defaultdict
 from operator import itemgetter
 import sys, os
@@ -12,9 +13,9 @@ import markdown2
 from flask_frozen import Freezer
 from jinja2.exceptions import TemplateNotFound
 import flask_assets
-from settings import FLICKR_API_KEY, FLICKR_API_SECRET
 from webassets import Bundle
 from werkzeug.contrib.atom import AtomFeed
+from html5lib_truncation import truncate_html
 import pyjade
 
 DEBUG = True
@@ -38,9 +39,15 @@ FLATPAGES_HTML_RENDERER = lambda x: markdown2.markdown(x,
 SITE_NAME = 'Ravi - Pickled Lime'
 SITE_ROOT = 'http://ravi.pckl.me'
 
+
 @pyjade.register_filter('markdown')
 def markdown(x,y):
     return FLATPAGES_HTML_RENDERER(x)
+
+
+@pyjade.register_filter('truncate_html')
+def do_truncate_html(html):
+    return truncate_html(html, 20, break_words=False, end='...')
 
 app = Flask(__name__)
 app.config.from_object(__name__)
@@ -54,6 +61,10 @@ assets.debug = DEBUG
 
 app.jinja_env.add_extension('webassets.ext.jinja2.AssetsExtension')
 app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
+app.jinja_env.filters['truncate_html'] = do_truncate_html
+app.jinja_env.filters['markdown'] = markdown
+
+
 pages = FlatPages(app)
 freezer = Freezer(app)
 #compass = Compass(app)
@@ -92,7 +103,7 @@ def make_external(url):
 
 @app.route('/')
 def index():
-    milestones = MODELS.get('milestones')
+    milestones = sorted(MODELS.get('milestones') + MODELS.get('posts') + MODELS.get('shorts'), key=lambda x: x.meta.get('date'), reverse=True)
     return render_template('homepage.jade', title='Ravi Kotecha', milestones=milestones)
 
 

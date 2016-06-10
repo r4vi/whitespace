@@ -1910,7 +1910,7 @@ li.index {
 @media (min-width: 37em) {
   /* line 166, ../sass/screen.sass */
   li.index {
-    list-style: lower-greek;
+    list-style: none;
   }
 }
 /* line 171, ../sass/screen.sass */

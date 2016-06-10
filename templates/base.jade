@@ -1,4 +1,4 @@
-!!! 5
+!!! html
 //if lt IE 7
   html.no-js.ie6.oldie(lang='en')
 //if IE 7
@@ -14,7 +14,7 @@ html.no-js(lang='en')
     meta(name="viewport", content='width=device-width, initial-scale=1')
     link(href=url_for('recent_feed'), rel='alternate', title='Recent Changes', type='application/atom+xml')
     block goog
-      script(type='text/javascript')
+      script(type='text/javascript').
         var _gaq = _gaq || [];
         var pluginUrl =
         '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
@@ -52,8 +52,6 @@ html.no-js(lang='en')
             block nav
               a(href="/") Ravi Kotecha
               nav
-                a(href='/short/') Shorts
-                a(href='/post/') Posts
                 a(href='/contact') Contact
         hr
         block content

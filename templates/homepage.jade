@@ -10,30 +10,12 @@ block content
     //   :markdown
     //     Hacker at large
   hr
-  h2='Milestones'
-  .milestones
-    each milestone in milestones
-      .milestone
-        - if milestone.meta.link
-          a(href=milestone.meta.link, target='_blank')
-            h3
-              =milestone.meta.title
-              - if milestone.meta.link
-                span.icon-external-link.pull-right
-        - else
-          h3
-          =milestone.meta.title
-        .subtitle
-          - if milestone.meta.subtitle
-            span.icon-hand-right=' '
-            =milestone.meta.subtitle
-          &nbsp;
-          span.icon-calendar
-          time.pubdate(datetime=milestone.meta.date)=milestone.meta.date.strftime('%B %Y')
-        .wrap
-          - if milestone.meta.thumbnail
-            img(src=milestone.meta.thumbnail)
-          .markdown
-            =milestone.html|safe
-        - if milestone.meta.status
-          p.status='Status: ' + milestone.meta.status
+  ul
+    each post in milestones
+      li.index
+        a(href='/#{post.path}')=post.title
+        - if post.meta.date
+          time.pubdate(datetime=post.meta.date)
+            span.icon-calendar
+            =post.meta.date.strftime('%B %Y')
+
