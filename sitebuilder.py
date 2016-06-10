@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # coding=utf-8
 from collections import defaultdict
-from operator import itemgetter
 import sys, os
 import itertools
 from urlparse import urljoin
@@ -15,7 +14,6 @@ from jinja2.exceptions import TemplateNotFound
 import flask_assets
 from webassets import Bundle
 from werkzeug.contrib.atom import AtomFeed
-from html5lib_truncation import truncate_html
 import pyjade
 
 DEBUG = True
@@ -45,10 +43,6 @@ def markdown(x,y):
     return FLATPAGES_HTML_RENDERER(x)
 
 
-@pyjade.register_filter('truncate_html')
-def do_truncate_html(html):
-    return truncate_html(html, 20, break_words=False, end='...')
-
 app = Flask(__name__)
 app.config.from_object(__name__)
 
@@ -61,7 +55,6 @@ assets.debug = DEBUG
 
 app.jinja_env.add_extension('webassets.ext.jinja2.AssetsExtension')
 app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
-app.jinja_env.filters['truncate_html'] = do_truncate_html
 app.jinja_env.filters['markdown'] = markdown
 
 
@@ -103,7 +96,7 @@ def make_external(url):
 
 @app.route('/')
 def index():
-    milestones = sorted(MODELS.get('milestones') + MODELS.get('posts') + MODELS.get('shorts'), key=lambda x: x.meta.get('date'), reverse=True)
+    milestones = MODELS.get('all')
     return render_template('homepage.jade', title='Ravi Kotecha', milestones=milestones)
 
 
