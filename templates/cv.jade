@@ -7,39 +7,67 @@ block content
   h1.title
     ='Curriculum Vitae'
   h2='Ravi Kotecha'
-  h4='Full Stack Software Developer'
+  h4='Software Developer'
   :markdown
     ##### What I can do for you?
     I'm available to work on software development projects, 
     I can also help you build an excellent team that is focused on delivery. 
     I usually work in `Python`, but 
-    sometimes you'll catch me working in `JavaScript` on `node.js`. 
+    sometimes you'll catch me working in `JavaScript` on `node`. 
+
     For large web projects I like `Django`, for small ones I like `Flask`.
 
-    ##### Any examples?
-    Recently at [Pitchup.com](http://www.pitchup.com), I have helped the 
-    company grow from myself and the [founder](http://www.pitchup.com/) 
-    working in a coffee shop to 
-    the biggest online camping booking service in Europe in just over two years.
-
     ##### Values
+    
     I believe software should be shipped often, that features should land early, 
     that users' productivity is more important than large documents containing 
     specifications. Talk is expensive, experiments are cheaper. 
 
-    I steer clear of anything that resembles spam, scams or ponzi schemes.
-
-    Aside from helping you with the technical side of your business I'm extremely
-    business focused. 
+    Aside from helping you with the technical side of your business I'm commercially
+    focused. 
 
     I can help you with your fund-raising [pitches](http://dl.dropboxusercontent.com/u/811105/code-projects/TripMediPitchPublic.pdf),
-    sales commission structuring, marketing ROI measurement and aligning your
+    sales commission structuring, marketing effectiveness measurement and aligning your
     product with your business objectives.
 
   div.cv
-    p="For a more traditional CV see below."
     hr
     h3="Employment"
+    div.row
+      h4.row-item
+        a(href='http://www.mandsdigital.com/')="Marks and Spencer Digital, London"
+      p.row-item="2015/07/09—Present"
+    h5='Senior Developer'
+    :markdown
+      Working in a multi-diciplinary team with a devops culture, with multiple releases 
+      a week and a strong belief in testing. 
+      
+      Our focus was on making store and call-centre collegues lives easier by
+      making user centered applications. The core piece of this was an
+      application called **Quick Order**. A Django website which is a
+      re-implementation of `www.marksandspencer.com` built on top of APIs
+      specially tailored to the needs of staff.
+      
+      This was pioneering work at M&S which up until this point was used to
+      building on an inflexiable off-the-shelf monolith enterprise system. Our
+      work with **Quick Order** was the basis for the customer facing 2016
+      [Christmas Food][cf] website.
+      
+      As lead developer on this team I was responsible:
+
+      * Mentoring the junior developers
+      * Security and stability
+      * Maintaining good test coverage
+      * Availaiblity and monitoring
+      * Troubleshooting downstream issues
+      * Working with the API team to expose the information we need
+      * Various devops duties e.g. SSL certificate mangement, DNS, PagerDuty
+      * Migrating from AWS to CloudFoundry
+      * Web development with `Python`/`Django`, `JavaScript` and Chrome Extensions
+      * Native Android application development using `Java` 
+      
+      [cf]: https://christmasfood.marksandspencer.com/
+  
     div.row
       h4.row-item
         a(href='http://www.betaty.pe/')="Betatype, London"
@@ -48,22 +76,28 @@ block content
     :markdown
       Advising Betatype on how to move their product which is currently a
       desktop application to a cloud based subscription service.
+      
+      I prototyped the inital version of the service using Amazon Web Services, AWS Lambda, S3, Django, Celery, Docker and SQS. 
+      Then helped hire full time developer to continue project and now oversee his progress on a monthly basis.
 
     div.row
       h4.row-item
         a(href='https://mojdigital.blog.gov.uk/')="Ministry of Justice Digital, London"
-      p.row-item="2014/03/02—Present"
+      p.row-item="2014/03/02—2015/07/08"
     h5='Senior Developer'
     :markdown
       `Python` and `JavaScript` developer on multiple digital transformation projects for the Ministry of Justice.
       
-      * Created a service to turn a phone based **Civil Legal Advice** phone-line into an
-        online, [self-service process][clap].
-        * Designed and implemented an [API][cla_api] for various web based clients to interact with the service.
-        * Worked on the backend much of which was about translating [legislation][lapso] into [code][cla_meanstest].
-      * Built the [Victims' Information Service][vis] a [Django CMS][vis_code] for police forces to signpost victims to the services available in their area.
+      * Created a service to turn the **Civil Legal Advice** phone-line into an
+        online, [self-service process][clap]
+        * Designed and implemented an [API][cla_api] for various web based clients to interact with the service
+        * Worked on the backend; much of which was about translating [legislation][lapso] into [code][cla_meanstest]
+      * Built the [Victims' Information Service][vis] a [Django CMS][vis_code] for police forces to signpost victims to the services available in their area
       * Worked on a technical discovery to build a [proof of concept][jsum_deploy] application deployment solution
-        based on `CoreOS`, `fleet` and `Docker`, hosted on Amazon Web Services.
+        based on `CoreOS`, `fleet` and `Docker`, hosted on Amazon Web Services
+      
+      All of the above was done by a small, highly skilled team where I was one of two backend developers. All of the code is Open Source and you can see exactly what I did by following the links above.
+      
       [cla_api]: http://ministryofjustice.github.io/cla_docs/cla_backend/operator%20api.html
       [cla_meanstest]: https://github.com/ministryofjustice/cla_backend/blob/develop/cla_backend/libs/eligibility_calculator/calculator.py
       [lapso]: http://www.legislation.gov.uk/ukpga/2012/10/contents
@@ -77,15 +111,16 @@ block content
       p.row-item="2013/09/01—2014/03/01"
     h5='Founder'
     :markdown
-      Browserstory is a product that allows people to add a single javascript
-      file to their site and be able to watch visitors interact with it in
+      Browserstory is a product that allows people to add a single `JavaScript`
+      file to their site and be able to watch visitors visually interact in
       real time.
 
       Working with a designer I built this product and took it to customer 
       validation stage. The product had a customer dashboard site built in
-      `Clojure`, and the `JavaScript` library was transpiled from `ClojureScript`.
+      `Clojure`, and the client library was transpiled from `ClojureScript`.
+      
       We stopped work on this after running a few trials with alpha customers and
-      found it didn't meet user needs.
+      found it didn't meet their user needs.
       
     div.row
       h4.row-item
@@ -102,10 +137,10 @@ block content
       * Responsible for all technology at Pitchup.com
       * Created mobile app API and supervised external agency on building Android and iOS apps
       * Building a sales tracking process for Pitchup.com's sales department with real time synchronisation between Saleforce and Pitchup.com 
-      * Front-end web design
+      * Front-end web development
       * Developing new features for Pitchup.com's Django back-end
       * Built geo-spatial features using PostGIS
-      * Scale Pitchup.com to handle an order of magnitude users more users
+      * Scale Pitchup.com to handle an order of magnitude more users
       * Performance engineering to reduce web application response times by 75%
       * Created Supplier API allowing suppliers to send vacancies directly to Pitchup.com's back-end
       * Interviewed and hired new members of the technical team
@@ -123,9 +158,10 @@ block content
       bus ride.
  
       I conceived and implemented [invite based][invite] viral marketing system for 
-      driving people to participate in the competition. On the backend was 
-      an **insights dashboard**
-      for processing applications that automatically gathered information about applicants
+      driving people to participate in the competition. 
+      
+      On the backend was 
+      an **insights dashboard** for processing applications that automatically gathered information about applicants
       from GitHub, LinkedIn and other public data sources.
 
       I also came up with the idea and built the successful [unlock your region][unlock] campaign
@@ -150,15 +186,19 @@ block content
 
       * Lead Developer for in-house web-based precious metals trading portal:
         * This portal allowed clients to trade precious metals OTC contracts over the Internet. These trades are automatically and immediately hedged by using Futures contracts on COMEX.
-          * I designed the multi-tier back-end server including exchange connectivity via FIX using the QuickFix open-source library, a price streaming component and the web front end (ASP.NET and jQuery).
-      * Developer for in-house trading and risk management system:
-          * Major database re-factoring to remove third-party framework, improving stability and performance.
+          * I designed the multi-tier backend server:
+            * Exchange connectivity via FIX
+            * Live price streaming component 
+            * Web frontend (ASP.NET and jQuery).
+      * Developer on our options trading and risk management system:
+          * Major database re-factoring to remove a third party framework, improving stability and performance.
           * WinForms development and UI design working closely with traders to create an interface that is both quick and logical to use.
           * Integration of new products by wrapping Quant DLLs.
           * Developing Excel add-in functionality using VSTO to expose pricing functions so that users can integrate them into their own spreadsheets.
       * Replaced legacy Java API based trade feed from the Intercontinental Exchange with new FIX based feed.
-          * Due to resource constraints I was given this project less than three weeks before ICE were due to turn off their Java API. I successfully designed, implemented and tested the FIX based replacement in those three weeks. 
+          * Due to resource constraints I was given this project less than three weeks before ICE were due to turn off their Java API. I successfully designed, implemented and tested the FIX based replacement on time. 
 
+          
     h5="Graduate Software Developer"
     :markdown
       *Rotational role where I gained experience in a number of different areas in the IT department.*
@@ -176,9 +216,10 @@ block content
       *Placement year role during sandwich year of my degree.*
 
       Highlights:
-      * Technical project management on upgrade of mobile sync platform. Managing a geographically dispersed team of fifteen people.
+      * Technical project management on upgrade of mobile sync platform. Project managing a geographically dispersed team of fifteen people.
       * LotusNotes application maintenance, administration and occasional development.
       * Windows Cluster configuration and set-up.
+      * Developing real-time monitoring dashbards, a precursor to modern dashboards like Graphite
 
     div.row
       h4.row-item
@@ -195,16 +236,13 @@ block content
     :markdown
       || **Language** || **Level** || *Comment* ||
       || Python       || Advanced  || Strong commercial experience ||
-      || JavaScript   || Advanced  || Strong commercial experience in both the browser and `nodejs`. Lots of experience with Angular JS ||
-      || C#           || Advanced  || Strong commercial experience ||
+      || JavaScript   || Advanced  || Strong commercial experience in both the browser and `node`. Lots of experience with Angular JS ||
+      || C#           || Rusty  || Strong commercial experience ||
       || Clojure      || Intermediate  || Used mostly for personal projects ||
       || Ruby/Rails      || Intermediate  || Built the candidate application workflow for the [StartupBus](http://www.startupbus.com/) using Rails ||
-      || Java           || Intermediate  || Main language used during my degree, however I may be a bit rusty ||
-      || Haskell        || Beginner  || Experimenting ||
-      || OCaml          || Beginner  || Experimenting ||
+      || Java           || Intermediate  || Main language used during my degree, recently used for Android development ||
     h4="Other Skills"
     :markdown
-      || **Platform** || Linux, FreeBSD, Windows  ||
       || **Database** || PostgreSQL, MySQL, MS-SQL, CouchDB, Redis  ||
       || **Tools**    || Git, Vagrant, Chef, Amazon Web Services, TravisCI, nginx, memcached, Varnish, Docker, CoreOS, etcd ||
 
