@@ -17,9 +17,8 @@ from werkzeug.contrib.atom import AtomFeed
 import pyjade
 
 DEBUG = True
-if len(sys.argv) > 1:
-    if sys.argv[1] == "build":
-        DEBUG = False
+if len(sys.argv) > 1 and sys.argv[1] == "build":
+    DEBUG = False
 
 FLATPAGES_AUTO_RELOAD = DEBUG
 FLATPAGES_EXTENSION = '.md'
