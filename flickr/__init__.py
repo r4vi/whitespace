@@ -44,11 +44,13 @@ def image_info(photo_id):
     # workout average color from small image
     average_color = get_average_color(sizes.get('Small',{}).get('source'))
 
-    ret =  {
+    return {
         'title': unicode(resp.photo.title),
-        'tags': map(lambda x: unicode(x.text).encode('utf-8'), resp.photo.tags.getchildren()),
+        'tags': map(
+            lambda x: unicode(x.text).encode('utf-8'),
+            resp.photo.tags.getchildren(),
+        ),
         'sizes': sizes,
-        'bgcolor': 'rgb({},{},{})'.format(*average_color)
+        'bgcolor': 'rgb({},{},{})'.format(*average_color),
     }
-    return ret
 
