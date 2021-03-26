@@ -21,7 +21,7 @@ paramiko==1.10.0
 pycrypto==2.6
 pyjade==4.0.0
 python-dateutil==2.1
-requests==1.1.0
+requests==2.20.0
 six==1.10.0
 webassets==0.8
 wsgiref==0.1.2
