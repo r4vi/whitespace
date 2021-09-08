@@ -4,7 +4,7 @@ Flask-Assets==0.8
 Flask-Compass==0.2
 Flask-FlatPages==0.3
 Frozen-Flask==0.9
-Jinja2==2.6
+Jinja2==2.11.3
 Markdown==2.2.1
 Pillow==8.3.2
 PyYAML==3.10
