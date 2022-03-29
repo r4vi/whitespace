@@ -17,7 +17,7 @@ ipdb==0.7
 ipython==0.13.1
 lxml
 markdown2==2.1.0
-paramiko==1.10.0
+paramiko==2.10.1
 pycrypto==2.6
 pyjade==4.0.0
 python-dateutil==2.1
