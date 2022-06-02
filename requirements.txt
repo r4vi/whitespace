@@ -12,7 +12,7 @@ Pygments==1.6
 Werkzeug==0.8.3
 argparse==1.2.1
 flickrapi==1.4.4
-html5lib==0.9999999
+html5lib==0.99999999
 ipdb==0.7
 ipython==0.13.1
 lxml
