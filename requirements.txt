@@ -9,7 +9,8 @@ colorama==0.4.4
 decorator==5.1.1
 docutils==0.16
 executing==0.10.0
-Flask
+feedwerk==1.1.0
+Flask==1.1.2
 Flask-Assets==2.0
 Flask-Compass==0.2
 Flask-FlatPages==0.8.1
@@ -17,16 +18,17 @@ flickrapi==2.4.0
 Frozen-Flask==0.18
 html5lib==1.1
 idna==3.3
+importlib-metadata==4.12.0
 ipdb==0.13.9
 ipython==8.4.0
-itsdangerous==2.1.2
+itsdangerous==2.0.1
 jedi==0.18.1
-Jinja2
+Jinja2==2.11.3
 jmespath==1.0.1
 lxml==4.9.1
 Markdown==3.4.1
 markdown2==2.4.3
-MarkupSafe==2.1.1
+MarkupSafe==2.0.1
 matplotlib-inline==0.1.6
 oauthlib==3.2.0
 parso==0.8.3
@@ -38,7 +40,7 @@ ptyprocess==0.7.0
 pure-eval==0.2.2
 pyasn1==0.4.8
 Pygments==2.13.0
-pyjade
+pyjade==4.0.0
 python-dateutil==2.8.2
 PyYAML==5.4.1
 requests==2.28.1
@@ -54,4 +56,5 @@ urllib3==1.26.12
 wcwidth==0.2.5
 webassets==2.0
 webencodings==0.5.1
-Werkzeug
+Werkzeug==2.0.3
+zipp==3.8.1

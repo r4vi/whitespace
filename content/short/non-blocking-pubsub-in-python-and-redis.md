@@ -1,5 +1,7 @@
+---
 date: 2012-05-15 00:00:00
 title: Non-Blocking PubSub in Python using Redis
+---
 
 <script src="https://gist.github.com/2935349.js?file=pub.py" type="text/javascript"></script>
 

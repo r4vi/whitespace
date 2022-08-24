@@ -1,5 +1,7 @@
+---
 date: 2011-11-22 00:00:00
 title: Javascript Page Reload with Cross Browser Compatibility
+---
 
 ```javascript
     var meta;

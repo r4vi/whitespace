@@ -1,9 +1,11 @@
+---
 date: 2013-12-20 18:48:06.654695
 title: "Kitekit: A Framework for Hyperpersonalised Fiction"
 link: http://kitekit.pckl.me/
 subtitle: Project / Creator
 status: Live
 thumbnail: /static/images/content/kitekit-ss.png
+---
 
 Inspired by
 [a blog post of mine from 2011][bp]

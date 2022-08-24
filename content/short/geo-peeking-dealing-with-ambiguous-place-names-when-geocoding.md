@@ -1,5 +1,7 @@
+---
 date: 2012-04-22 00:00:00
 title: 'Geo-Peeking: Dealing with Ambiguous Place Names when Geocoding'
+---
 
 <iframe width="853" height="480" src="http://www.youtube-nocookie.com/embed/bmdz_myJSsY?rel=0" frameborder="0" allowfullscreen></iframe>
 

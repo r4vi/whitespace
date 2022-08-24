@@ -1,8 +1,10 @@
-date: 2012-09-16 00:00:00
+---
+date: 2012-09-16 00:00:00.908021
 title: The Data Dress
 subtitle: Hackathon / Participant
 link: http://rhizome.org/editorial/2012/sep/26/dresses-made-tweets-and-tropical-fish-musical-scal/
 thumbnail: http://farm9.staticflickr.com/8170/7999716083_9a44b6ea00_m.jpg
+---
 
 At a [hackathon][s6] that happened to overlap London Fashion Week, our team decided to
 create a [dress][dress] from the pictures that were being uploaded to instagram and flickr

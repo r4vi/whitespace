@@ -1,3 +1,4 @@
+---
 date: 2013-09-16 17:50:50.819268
 title: 'UX Innovation in Unexpected Places: The Cash Machine'
 tags:
@@ -6,6 +7,7 @@ tags:
   - cash
   - ux
   - ui
+---
 
 ![cash money screen](/static/images/content/nationwide-atm-favs.jpg)
 I noticed a new feature on Nationwide cash machines recently. Instead of the usual flow of:

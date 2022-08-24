@@ -1,8 +1,10 @@
+---
 date: 2013-04-01 18:11:44.367787
 title: 'A Better Gmail'
 tags:
   - email
   - idea
+---
 
 I've been frustrated with Gmail recently, not just mildly irritated
 but enough to go looking for alternatives but there really isn't

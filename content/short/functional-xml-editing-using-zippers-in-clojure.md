@@ -1,8 +1,10 @@
+---
 date: 2014-01-31 17:18:55.256927
 title: Functional XML editing using zippers in Clojure
 tags:
   - clojure
   - xml
+---
 
 Since the Clojure documentation for `clojure.zip` is so bad I thought
 I'd walk through an example of editing some XML using a zipper.

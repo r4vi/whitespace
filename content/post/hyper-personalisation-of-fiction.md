@@ -1,6 +1,8 @@
+---
 date: 2011-08-16 00:00:00
 title: Hyper-Personalisation of Fiction
 tags: []
+---
 
 ## A Different Take On Choose Your Own Adventure
 Over the last few days I've come across three ideas which made me think about technology and the evolution of stories to make them more relevant to the reader.

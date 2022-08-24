@@ -1,7 +1,9 @@
-date: 2012-12-13 01:00:00
+---
+date: 2012-12-13 01:00:00.908021
 title: Bigv.io Pricing Calculator App
 link: http://bigv.pckl.me
 subtitle: Project / Creator
+---
 
 A pricing calculator for [bytemark's][bm] new cloud hosting
 platform [bigv.io](http://bigv.io) using [AngularJS][angular].

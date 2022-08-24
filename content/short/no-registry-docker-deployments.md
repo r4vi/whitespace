@@ -1,10 +1,12 @@
+---
 date: 2016-06-10 21:06:34.830696
 title: No Registry Docker Deployments
 tags:
     - docker
     - devops
     - linux
-    
+---
+
 Sometimes you want to deploy an application that's packaged as a Docker
 container but you don't want to set up a registry.  Not that setting one 
 up is hard with [AWS ECR][awsecr] or Google Cloud's

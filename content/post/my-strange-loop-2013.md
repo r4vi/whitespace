@@ -1,9 +1,11 @@
+---
 date: 2013-09-24 00:02:56.705525
 title: "My Strange Loop 2013: Part 1"
 tags:
   - programming
   - strangeloop
   - st louis
+---
 
 I have been excited about StrangeLoop for a while, I actually told somebody the
 two tech conferences I've always wanted to attend were _Emerging Languages Camp_

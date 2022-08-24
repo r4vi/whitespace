@@ -1,5 +1,7 @@
+---
 date: 2013-02-22 00:00:00
 title: Speed Up Pushing to GitHub
+---
 
 ```bash
     ssh -N git@github.com &
