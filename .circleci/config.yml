@@ -51,7 +51,7 @@ jobs:
     # The following line was run implicitly in your 1.0 builds based on what CircleCI inferred about the structure of your project. In 2.0 you need to be explicit about which commands should be run. In some cases you can discard inferred commands if they are not relevant to your project.
     - run: sudo apt update && sudo apt install bundler
     - run: bundle install
-    - run: if [ -e requirements.txt ]; then pip install --user -r requirements.txt; else pip install -r requirements.pip; fi
+    - run: pip install -r requirements.txt
     - run: python sitebuilder.py build
     - run: ./deploy.sh
     - save_cache:
@@ -67,11 +67,4 @@ jobs:
     # See the documentation for more information https://circleci.com/docs/2.0/workflows/
     # Teardown
     #   If you break your build into multiple jobs with workflows, you will probably want to do the parts of this that are relevant in each
-    # Save test results
-    - store_test_results:
-        path: /tmp/circleci-test-results
-    # Save artifacts
-    - store_artifacts:
-        path: /tmp/circleci-artifacts
-    - store_artifacts:
-        path: /tmp/circleci-test-results
+
