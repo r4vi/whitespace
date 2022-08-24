@@ -10,11 +10,74 @@ block content
   h4='Software Developer'
   div.cv
     hr
-    h3="Employment"
+    h3="Contracts and Employment"
+
+    div.row
+      h4.row-item
+        a(href='https://www.gov.uk/government/organisations/department-for-international-trade')="Department for International Trade, London"
+      p.row-item="2021/06/14-Ongoing"
+    h5='Lead Site Reliability Engineer'
+    :markdown
+
+      Reporting to the CTO, managed a team of five Site Reliability Engineers who look after the platform hosting
+      all of the Department's **gov.uk** websites and transactional services.
+
+      The platform is hosted on AWS using Kubernetes and [GOV.UK PaaS](https://docs.cloud.service.gov.uk/). 
+      
+      My team provided business as usual support for development teams but this was only a small part of our
+      remit. The real goal of our team was to work with the development teams to extract
+      common components which are built multiple times into reusable microservices provided centrally.
+
+      Examples of this include tools for monitoring (Grafana), logging (Kibana), exception alerting (Sentry),
+      authentication (custom SAML IdP) and virus scanning (ClamAV). This allows teams to focus on the problem they 
+      need to solve instead of reinventing the wheel.
+
+      I worked closely with our Cybersecurity team to ensure logs from the various services we managed were 
+      fed into a security information and event management system (SEIM).
+
+      Also as one of the most senior technical civil servants part of my role was pastoral
+      care of the entire development community, their career development and being
+      responsible for our technical recruitment.
+
+    div.row
+      h4.row-item
+        a(href='https://www.gov.uk/government/publications/notice-to-exporters-202108-lite/nte-202108-lite')="Department for International Trade, London"
+      p.row-item="2020/04/01-2021/04/30"
+    h5='Tech Lead, Licensing for International Trade and Enterprise'
+    :markdown
+
+      Worked as part of a multi-disciplinary agile team to replace a legacy
+      export licencing system with a modern, Government [service standards](https://www.gov.uk/service-manual/service-standard) compliant
+      web application. LITE is a two tier Django Rest Framework application backed by a
+      PostgreSQL database.
+
+      In addition to general development, my role was to:
+
+      - Design data migration from legacy system to LITE
+      - Design and implement SQL based reporting feature
+      - Improve general security posture
+      - Integration with HMRC's Chief / CDS systems
+      - Ensure good code quality standards are maintained
+      - Ensure security issues are fixed quickly
+
+    div.row
+      h4.row-item
+        a(href='https://www.gov.uk/government/organisations/department-for-international-trade')="Department for International Trade, London"
+      p.row-item="2019/12/16-2020/03/31"
+    h5='Lead Developer, Consent Service'
+    :markdown
+      Built a microservice to record email marketing consent, to act as a central source of truth for all DIT systems:
+
+      - A Django / Django Rest Framework API with PostgreSQL database.
+      - Hosted on GOV.UK PaaS (Cloudfoundry).
+      - Various integrations with third party systems; maxemail, great.gov.uk and DIT's CRM tool.
+
+      Much of my work on this project was technical leadership and working with teams across DIT to ensure buy-in to the new microservice and helping them integrate with it.
+
     div.row
       h4.row-item
         a(href='http://www.betaty.pe/')="Betatype, London"
-      p.row-item="2016/07/18 - Ongoing"
+      p.row-item="2016/07/18 - 2020/01/01"
     h5='Technical Advisory'
     :markdown
       Advising Betatype on how to move their product which is currently a
@@ -27,19 +90,6 @@ block content
     :markdown
       From April to May 2018 I led a technical discovery looking at how machine learning could be applied to additive manufacturing processes.
 
-    div.row
-      h4.row-item
-        a(href='https://www.gov.uk/government/organisations/department-for-international-trade')="Department for International Trade, London (via Methods Digital)"
-      p.row-item="2019/12/16-2020/03/31"
-    h5='Lead Developer, Consent Service'
-    :markdown
-      Built a micro-service to record email marketing consent, to act as a central source of truth for all DIT systems:
-
-      - A Django / Django Rest Framework API with PostgreSQL database.
-      - Hosted on GOV.UK PaaS (Cloudfoundry).
-      - Various integrations with third party systems; maxemail, great.gov.uk and DIT's CRM tool.
-
-      Much of the work on this project was technical leadership and working with teams across DIT to ensure buy-in to the new micro-service and helping them integrate with it.
 
     div.row
       h4.row-item
@@ -47,7 +97,7 @@ block content
       p.row-item="2018/06/11-2019/12/07"
     h5='Head of WebOps, MOJ Analytical Platform'
     :markdown
-      Building and adding features to Ministry of Justice's Analytical Platform:
+      Building and adding features to Ministry of Justice's Analytical Platform, a data science focused platform as a service (PaaS):
 
       - A range of analytical tools that can access this curated data, from cutting edge data science, machine learning and AI tools to Business Intelligence dashboards.
       - Tools to build automated data processing and pipelines (Apache Airflow), enabling data to be transformed between source systems and a curated data storage layer.
@@ -146,10 +196,8 @@ block content
       * Worked on a technical discovery to build a [proof of concept][jsum_deploy] application deployment solution
         based on `CoreOS`, `fleet` and `Docker`, hosted on Amazon Web Services
 
-      The code is all Open Source and you can see exactly what I did by following the links above.
-
       [cla_api]: http://ministryofjustice.github.io/cla_docs/cla_backend/operator%20api.html
-      [cla_meanstest]: https://github.com/ministryofjustice/cla_backend/blob/develop/cla_backend/libs/eligibility_calculator/calculator.py
+      [cla_meanstest]: https://github.com/ministryofjustice/cla_backend/blob/master/cla_backend/libs/eligibility_calculator/calculator.py
       [lapso]: http://www.legislation.gov.uk/ukpga/2012/10/contents
       [vis]: https://www.victimsinformationservice.org.uk/
       [vis_code]: https://github.com/ministryofjustice/vis
@@ -193,10 +241,9 @@ block content
       * Scale Pitchup.com to handle an order of magnitude more users
       * Performance engineering to reduce web application response times by 75%
       * Created Supplier API allowing suppliers to send vacancies directly to Pitchup.com's back-end
-      * Interviewed and hired new members of the technical team
       * Built a faceted camping search engine using Apache Solr with black box ranking algorithm optimised for revenue and probability of conversion
       * Maintaining and designing Pitchup.com's server architecture, a hybrid physical and cloud setup that can scale with Pitchup.com's seasonal traffic
-      * Built a real-time inventory and expected revenue based CPC system to optimise Google AdWords bidding
+      * Built a real-time inventory and expected revenue based Cost-per-click system to optimise Google AdWords bidding
 
     div.row
       h4.row-item
@@ -259,7 +306,7 @@ block content
       * Developed a P&L reconciliation and reporting system for the Financial Risk Management department using Python, Sybase and the Pylons web framework to run on Solaris
     div.row
       h4.row-item
-        a(href='http://corporateandinvestment.standardbank.com/')="3M UK PLC, Berkshire"
+        a(href='https://www.3m.co.uk/3M/en_GB/company-uk/')="3M UK PLC, Berkshire"
       p.row-item='2005—2006'
     h5="Technical Infrastructure Analyst"
     :markdown
@@ -273,7 +320,7 @@ block content
 
     div.row
       h4.row-item
-        a(href='http://www.jessops.com/')="Jessops Group"
+        a(href='https://www.jessops.com/')="Jessops Group"
       p.row-item='2001-2005'
     h5='Various Part-Time and Summer Roles'
     :markdown
@@ -306,33 +353,3 @@ block content
     :markdown
       Four year course with a year in industry, my dissertation focused on information
       security and the identification and mitigation of buffer overflow exploits.
-
-    h3="Training"
-    p.row
-      span.row-item="Project Management and PRINCE2 Fundamentals"
-      span.row-item="2008"
-    p.row
-      span.row-item="Design Patterns"
-      span.row-item="2008"
-    p.row
-      span.row-item="SIMARCH Investment Banking Simulation"
-      span.row-item="2007"
-    p.row
-      span.row-item="Introduction to Microsoft SQL2005 / TSQL"
-      span.row-item="2007"
-    p.row
-      span.row-item="Intermediate C#"
-      span.row-item="2007"
-    p.row
-      span.row-item="Introduction to Financial Markets (Intensive Course)"
-      span.row-item="2007"
-    p.row
-      span.row-item="Chartered Management Institute Certificate in Management Level 3"
-      span.row-item="2005"
-    h3="References"
-    :markdown
-      Available on [request](/contact)
-    h3="Recruiters"
-    :markdown
-      If you're a recruitment agency, find out how to work with me
-        [here](https://www.youtube.com/watch?v=dQw4w9WgXcQ)

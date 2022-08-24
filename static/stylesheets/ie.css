@@ -2045,13 +2045,13 @@ article > header > h1::after {
   max-width: none;
 }
 /* line 241, ../sass/screen.sass */
-.milestones h1, .milestones h2, .milestones h3, .milestones h4, .milestones h5 {
+.milestones h1, .milestones h2, .milestones h3, .milestones h4, .milestones h5, .milestones h6 {
   margin-bottom: 0.25rem;
   color: #4e5360;
   line-height: 100%;
 }
 /* line 245, ../sass/screen.sass */
-.milestones h1 a, .milestones h2 a, .milestones h3 a, .milestones h4 a, .milestones h5 a {
+.milestones h1 a, .milestones h2 a, .milestones h3 a, .milestones h4 a, .milestones h5 a, .milestones h6 a {
   font-size: 1rem;
 }
 /* line 247, ../sass/screen.sass */
