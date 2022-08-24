@@ -5,7 +5,7 @@ import sys, os
 import itertools
 from urllib.parse import urljoin
 import datetime
-from subprocess import handle_command
+
 from flask import Flask, render_template, send_from_directory, request, json, g
 from flask_flatpages import FlatPages
 import markdown2
@@ -13,7 +13,7 @@ from flask_frozen import Freezer
 from jinja2.exceptions import TemplateNotFound
 import flask_assets
 from webassets import Bundle
-from werkzeug.contrib.atom import AtomFeed
+from feedwerk.atom import AtomFeed
 import pyjade
 
 DEBUG = True
@@ -191,8 +191,5 @@ if __name__ == "__main__":
             subprocess.call("bundle exec compass compile --app-dir static/ -c static/config.rb --force", shell=True)
             DEBUG = False
             freezer.freeze()
-        else:
-            handle_command(sys.argv[1:])
-            #handle creating new photos here
     else:
         app.run(port=9090, debug=DEBUG)
