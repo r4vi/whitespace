@@ -3,9 +3,9 @@
 from collections import defaultdict
 import sys, os
 import itertools
-from urlparse import urljoin
+from urllib.parse import urljoin
 import datetime
-from commands import handle_command
+from subprocess import handle_command
 from flask import Flask, render_template, send_from_directory, request, json, g
 from flask_flatpages import FlatPages
 import markdown2
@@ -74,7 +74,7 @@ MODELS = {
     'posts': sorted([p for p in live_pages if p.path.startswith('post/')], key=lambda x: x.meta.get('date'), reverse=True),
     'milestones': sorted([p for p in live_pages if p.path.startswith('milestone/')], key=lambda x: x.meta.get('date'), reverse=True),
 }
-MODELS['all'] = sorted(itertools.chain.from_iterable(MODELS.values()), key=lambda x: x.meta.get('date'), reverse=True)
+MODELS['all'] = sorted(itertools.chain.from_iterable(list(MODELS.values())), key=lambda x: x.meta.get('date'), reverse=True)
 
 @app.before_request
 def before_req():
@@ -87,7 +87,7 @@ def before_req():
             'posts': sorted([p for p in live_pages if p.path.startswith('post/') and (not getattr(p, 'draft', False))], key=lambda x: x.meta.get('date'), reverse=True),
             'milestones': sorted([p for p in live_pages if p.path.startswith('milestone/')], key=lambda x: x.meta.get('date'), reverse=True),
             }
-        MODELS['all'] = sorted(itertools.chain.from_iterable(MODELS.values()), key=lambda x: x.meta.get('date'), reverse=True)
+        MODELS['all'] = sorted(itertools.chain.from_iterable(list(MODELS.values())), key=lambda x: x.meta.get('date'), reverse=True)
 
 
 def make_external(url):

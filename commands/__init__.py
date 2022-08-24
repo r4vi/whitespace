@@ -29,7 +29,7 @@ def slugify(text, encoding=None,
     while '--' in clean_text:
         clean_text = clean_text.replace('--', '-')
     ascii_text = normalize('NFKD', clean_text).encode('ascii', 'ignore')
-    strict_text = map(lambda x: x if x in permitted_chars else '', ascii_text)
+    strict_text = [x if x in permitted_chars else '' for x in ascii_text]
     return ''.join(strict_text)
 
 
@@ -108,4 +108,4 @@ def handle_command(*args):
             new_short(args.title, date=args.date)
         elif args.new.startswith('photo'):
             new_photo(args.photo, date=args.date)
-    print args
+    print(args)

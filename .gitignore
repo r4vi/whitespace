@@ -3,6 +3,7 @@
 *~
 *.pyc
 *venv
+*.bak
 venv
 build
 settings.pystatic/.webassets-cache/
@@ -14,3 +15,5 @@ static/.webassets-cache/*
 node_modules/
 .sass-cache/
 settings_local.py
+vendor/
+.bundle/

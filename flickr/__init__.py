@@ -5,7 +5,7 @@ from PIL import Image
 from xml.etree import ElementTree
 from lxml import objectify
 import requests
-from cStringIO import StringIO
+from io import StringIO
 
 CLIENT = flickrapi.FlickrAPI(FLICKR_API_KEY, FLICKR_API_SECRET, cache=True)
 
@@ -45,8 +45,8 @@ def image_info(photo_id):
     average_color = get_average_color(sizes.get('Small',{}).get('source'))
 
     ret =  {
-        'title': unicode(resp.photo.title),
-        'tags': map(lambda x: unicode(x.text).encode('utf-8'), resp.photo.tags.getchildren()),
+        'title': str(resp.photo.title),
+        'tags': [str(x.text).encode('utf-8') for x in resp.photo.tags.getchildren()],
         'sizes': sizes,
         'bgcolor': 'rgb({},{},{})'.format(*average_color)
     }

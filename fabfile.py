@@ -1,9 +1,9 @@
-from StringIO import StringIO
+from io import StringIO
 from fabric.api import *
 from fabric.contrib.files import exists
 from fabric.operations import get, put
 from fabric.contrib.project import rsync_project
-from cStringIO import StringIO
+from io import StringIO
 import os
 
 
