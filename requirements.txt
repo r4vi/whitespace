@@ -14,7 +14,7 @@ argparse==1.2.1
 flickrapi==1.4.4
 html5lib==0.9999999
 ipdb==0.7
-ipython==0.13.1
+ipython==7.16.3
 lxml
 markdown2==2.1.0
 paramiko==1.10.0
