@@ -1,11 +1,12 @@
 #!/usr/bin/env python
 from collections import defaultdict
-import sys, os
+import sys
+import os
 import itertools
 from urllib.parse import urljoin
 import datetime
 
-from flask import Flask, render_template, send_from_directory, request, json, g
+from flask import Flask, render_template, send_from_directory, g
 from flask_flatpages import FlatPages
 import markdown2
 from flask_frozen import Freezer
@@ -14,6 +15,7 @@ import flask_assets
 from webassets import Bundle
 from feedwerk.atom import AtomFeed
 import pyjade
+from commands import handle_command
 
 DEBUG = True
 if len(sys.argv) > 1:
@@ -23,22 +25,26 @@ if len(sys.argv) > 1:
 FLATPAGES_AUTO_RELOAD = DEBUG
 FLATPAGES_EXTENSION = '.md'
 FLATPAGES_ROOT = './content/'
-FLATPAGES_HTML_RENDERER = lambda x: markdown2.markdown(x,
-        extras=[
-            "fenced-code-blocks",
-            "header-ids",
-            "cuddled-lists",
-            "wiki-tables",
-            "smarty-pants"
-            "toc",
-            "footnotes",
-            ])
+
+
+def FLATPAGES_HTML_RENDERER(x): return markdown2.markdown(x,
+                                                          extras=[
+                                                              "fenced-code-blocks",
+                                                              "header-ids",
+                                                              "cuddled-lists",
+                                                              "wiki-tables",
+                                                              "smarty-pants"
+                                                              "toc",
+                                                              "footnotes",
+                                                          ])
+
+
 SITE_NAME = 'Ravi - Pickled Lime'
 SITE_ROOT = 'http://ravi.pckl.me'
 
 
 @pyjade.register_filter('markdown')
-def markdown(x,y):
+def markdown(x, y):
     return FLATPAGES_HTML_RENDERER(x)
 
 
@@ -51,7 +57,6 @@ assets.init_app(app)
 assets.debug = DEBUG
 
 
-
 app.jinja_env.add_extension('webassets.ext.jinja2.AssetsExtension')
 app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
 app.jinja_env.filters['markdown'] = markdown
@@ -61,10 +66,10 @@ pages = FlatPages(app)
 freezer = Freezer(app)
 #compass = Compass(app)
 
-common_js = Bundle('js/modernizr.custom.59903.js', 'js/jquery-1.9.1.min.js', output='js/gen/common.js', filters='rjsmin')
+common_js = Bundle('js/modernizr.custom.59903.js', 'js/jquery-1.9.1.min.js',
+                   output='js/gen/common.js', filters='rjsmin')
 
 assets.register('common_js', common_js)
-
 
 
 live_pages = [x for x in pages if not x.meta.get('draft', False)]
@@ -73,7 +78,9 @@ MODELS = {
     'posts': sorted([p for p in live_pages if p.path.startswith('post/')], key=lambda x: x.meta.get('date'), reverse=True),
     'milestones': sorted([p for p in live_pages if p.path.startswith('milestone/')], key=lambda x: x.meta.get('date'), reverse=True),
 }
-MODELS['all'] = sorted(itertools.chain.from_iterable(list(MODELS.values())), key=lambda x: x.meta.get('date'), reverse=True)
+MODELS['all'] = sorted(itertools.chain.from_iterable(
+    list(MODELS.values())), key=lambda x: x.meta.get('date'), reverse=True)
+
 
 @app.before_request
 def before_req():
@@ -85,8 +92,9 @@ def before_req():
             'shorts': sorted([p for p in live_pages if p.path.startswith('short/')], key=lambda x: x.meta.get('date'), reverse=True),
             'posts': sorted([p for p in live_pages if p.path.startswith('post/') and (not getattr(p, 'draft', False))], key=lambda x: x.meta.get('date'), reverse=True),
             'milestones': sorted([p for p in live_pages if p.path.startswith('milestone/')], key=lambda x: x.meta.get('date'), reverse=True),
-            }
-        MODELS['all'] = sorted(itertools.chain.from_iterable(list(MODELS.values())), key=lambda x: x.meta.get('date'), reverse=True)
+        }
+        MODELS['all'] = sorted(itertools.chain.from_iterable(
+            list(MODELS.values())), key=lambda x: x.meta.get('date'), reverse=True)
 
 
 def make_external(url):
@@ -113,32 +121,39 @@ def recent_feed():
                  author='Ravi Kotecha',
                  url=make_external(post.path),
                  updated=post.meta.get('date', datetime.datetime.now())
-        )
+                 )
     return feed.get_response()
+
 
 @app.route('/short/')
 def short_index():
     shorts = MODELS.get('shorts')
     return render_template('short_index.jade', shorts=shorts, title='Shorts')
 
+
 @app.route('/post/')
 def post_index():
-    posts = [p for p in MODELS.get('posts') if 'draft' not in p.meta.get('tags', [])]
+    posts = [p for p in MODELS.get(
+        'posts') if 'draft' not in p.meta.get('tags', [])]
     return render_template('post_index.jade', posts=posts, title='Posts')
+
 
 @app.route('/cv/')
 def cv_index():
     return render_template('cv.jade', title='Curriculum Vitae')
 
+
 @app.route('/cv/recruiters/')
 def cv_recruiters():
     return render_template('cv_recruiters.jade', title='Tips for Recruiters')
+
 
 def _to_default_dict(d):
     orig = d.get('Original')
     ret = defaultdict(lambda: orig)
     ret.update(d)
     return ret
+
 
 @app.route('/<path:path>/')
 def page(path):
@@ -157,18 +172,20 @@ def page(path):
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(
-      os.path.join(
-        app.root_path, 'static', 'images'),
-      'favicon.ico',
-      mimetype='image/vnd.microsoft.icon')
+        os.path.join(
+            app.root_path, 'static', 'images'),
+        'favicon.ico',
+        mimetype='image/vnd.microsoft.icon')
+
 
 @app.route('/robots.txt')
 def robots():
     return send_from_directory(
-      os.path.join(
-        app.root_path, 'static'),
-      'robots.txt',
-      mimetype='text/plain')
+        os.path.join(
+            app.root_path, 'static'),
+        'robots.txt',
+        mimetype='text/plain')
+
 
 @app.route('/keybase.txt')
 def keybase():
@@ -178,17 +195,22 @@ def keybase():
         'keybase.txt',
         mimetype='text/plain')
 
+
 @freezer.register_generator
 def page():
     for p in live_pages:
         yield {'path': p.path}
 
+
 if __name__ == "__main__":
     if len(sys.argv) > 1:
         if sys.argv[1] == "build":
             import subprocess
-            subprocess.call("bundle exec compass compile --app-dir static/ -c static/config.rb --force", shell=True)
+            subprocess.call(
+                "bundle exec compass compile --app-dir static/ -c static/config.rb --force", shell=True)
             DEBUG = False
             freezer.freeze()
+        else:
+            handle_command(sys.argv[1:])
     else:
         app.run(port=9090, debug=DEBUG)
