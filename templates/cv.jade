@@ -18,10 +18,12 @@ block content
       p.row-item="2022/05/01-Ongoing"
     h5='Founder'
     :markdown
-      I am currently the solo founder of a Cybersecurity SaaS startup. 
-      I wear many hats and am responsible for all aspects of the business, from product development 
+      I am currently the solo founder of a cyber security SaaS startup.
+      I wear many hats and am responsible for all aspects of the business, from product development
       to marketing to customer support. I am writing the software, including the frontend, backend, architecture and infrastructure as code.
       It's a lot of work, but I enjoy the challenge and the opportunity to build something from scratch.
+
+      The web framework is Django, the CSS framework is Tailwind CSS, the Javascript framework is Alpinejs, and the database is Postgres.
 
     div.row
       h4.row-item
@@ -33,17 +35,21 @@ block content
       I managed a team of five Site Reliability Engineers who look after the platform hosting
       all of the Department's **gov.uk** websites and transactional services. I reported directly to the CTO.
 
-      The platform is hosted on AWS using Kubernetes and [GOV.UK PaaS](https://docs.cloud.service.gov.uk/). 
-      
+      The platform is a multi-cloud solution hosted on:
+       - AWS using Kubernetes (EKS) and ECR.
+       - Cloudfoundry through [GOV.UK PaaS](https://docs.cloud.service.gov.uk/)
+       - Google Cloud Platform for container registry, container scanning and intergration with Google Analytics 360 through BigQuery
+       - Azure for Azure Sentinal SEIM
+
       My team provided business as usual support for development teams but this was only a small part of our
       remit. The real goal of our team was to work with the development teams to extract
       common components which are built multiple times into reusable microservices provided centrally.
 
       Examples of this include tools for monitoring (Grafana), logging (Kibana), exception alerting (Sentry),
-      authentication (custom SAML IdP) and virus scanning (ClamAV). This allows teams to focus on the problem they 
+      authentication (custom SAML IdP) and virus scanning (ClamAV). This allows teams to focus on the problem they
       need to solve instead of reinventing the wheel.
 
-      I worked closely with our Cybersecurity team to ensure logs from the various services we managed were 
+      I worked closely with our Cybersecurity team to ensure logs from the various services we managed were
       fed into a security information and event management system (SEIM).
 
       Also as one of the most senior technical civil servants part of my role was pastoral
@@ -115,7 +121,7 @@ block content
       - A deployment platform for data web apps, that are used by customers in policy and operations.
       - Working with Data Engineers to provide training material, environments and documentation for new Data Scientists.
 
-      The platform was hosted on AWS using Kubernetes. Programming languages used: Python, JavaScript and Go. Databases used: Postgres, AWS Athena.
+      The platform was hosted on AWS using Kubernetes (KOPS). Programming languages used: Python, JavaScript and Go. Databases used: Postgres, AWS Athena.
 
     div.row
       h4.row-item
