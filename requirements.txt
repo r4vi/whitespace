@@ -30,7 +30,7 @@ Markdown==3.4.1
 markdown2==2.4.3
 MarkupSafe==2.0.1
 matplotlib-inline==0.1.6
-oauthlib==3.2.0
+oauthlib==3.2.2
 parso==0.8.3
 pexpect==4.8.0
 pickleshare==0.7.5
